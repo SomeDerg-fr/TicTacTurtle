@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425130784}
   - component: {fileID: 425130783}
+  - component: {fileID: 425130785}
   m_Layer: 5
   m_Name: Deck
   m_TagString: Untagged
@@ -258,6 +259,8 @@ MonoBehaviour:
   Turtles:
   - {fileID: 4290667724937138049, guid: 087118c9c81871c4a84dd639cedc3c99, type: 3}
   - {fileID: 4290667724937138049, guid: 2a903a69cf8ad944e920fcf6445ad1a8, type: 3}
+  - {fileID: 4290667724937138049, guid: 4e9c08e092793fe42813a95b212186f2, type: 3}
+  - {fileID: 4290667724937138049, guid: fc27801b81d71624a92750c7f8e89f7c, type: 3}
   highlights:
   - {fileID: 399796566}
   - {fileID: 1401280240}
@@ -270,6 +273,7 @@ MonoBehaviour:
   - {fileID: 2004554994}
   yes: {fileID: 2100000, guid: 7d9fb30a230ebcd40a1acbde22367797, type: 2}
   no: {fileID: 2100000, guid: ce09ee0030cc902439aee59a78e03968, type: 2}
+  deckObject: {fileID: 425130782}
 --- !u!4 &425130784
 Transform:
   m_ObjectHideFlags: 0
@@ -287,6 +291,27 @@ Transform:
   - {fileID: 446482053}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &425130785
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425130782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5515628, y: 0.18433505, z: 2.6022139}
+  m_Center: {x: -1.5146763, y: 0.43011102, z: 0.4148152}
 --- !u!1 &438513864
 GameObject:
   m_ObjectHideFlags: 0
