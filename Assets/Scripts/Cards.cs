@@ -15,9 +15,10 @@ using UnityEngine.UIElements;
 
 public class Cards : MonoBehaviour
 {
-    Card[] board = new Card[9];
-    GameObject[] boardObj = new GameObject[9];
+    public Card[] board = new Card[9];
+    public GameObject[] boardObj = new GameObject[9];
     bool isPlacing = false;
+    bool isChoosing = false;
     System.Random rnd = new System.Random();
 
     int UILayer;
@@ -28,7 +29,7 @@ public class Cards : MonoBehaviour
         public bool own;
         public int playEffectID;
         public int passiveID;
-        public int target = -1;
+        public int target;
 
 
         public Card()
@@ -38,6 +39,7 @@ public class Cards : MonoBehaviour
             this.own = true;
             this.playEffectID = -1;
             this.passiveID = 0;
+            this.target = -1;
         }
 
         public Card(string n, int[] pl, int pE, int p)
@@ -47,6 +49,7 @@ public class Cards : MonoBehaviour
             this.own = true;
             this.playEffectID = pE;
             this.passiveID = p;
+            this.target = -1;
         }
         public String getName()
         {
@@ -70,10 +73,10 @@ public class Cards : MonoBehaviour
         }
     }
     Card[] deck;
-    Card[] oppDeck = new Card[3];
+    Card[] oppDeck;
     Card[] handCards = new Card[3];
     GameObject[] handObjects = new GameObject[3];
-    float[] cardx = new float[] { -0.727f, 1.06f, 2.847f };
+    float[] cardx = new float[] { -0.727f, 1.06f, 2.847f, 4.634f };
     String phase = "action";
 
     void Start()
@@ -83,12 +86,15 @@ public class Cards : MonoBehaviour
         deck[1] = new Card("Spy Turtle", new int[] { 1, 3, 5, 7, 9 }, 0, 1);
         deck[2] = new Card("Defender Turtle", new int[] { 1, 3, 7, 9 }, -1, 2);
         deck[3] = new Card("Magic Turtle", new int[] { 2, 4, 6, 8 }, 1, 3);
+        deck[4] = new Card("Attacker Turtle", new int[] { 2, 4, 6, 8 }, -1, 4);
+        deck[5] = new Card("Business Turtle", new int[] { 1, 2, 3, 4, 6, 7, 8, 9 }, -1, 5);
+        deck[6] = new Card("Evil Turtle", new int[] { 1, 3, 5, 7, 9 }, -1, 6);
+        deck[7] = new Card("War Turtle", new int[] { 1, 3, 7, 9 }, 2, 7);
 
-        oppDeck = new Card[Turtles.Length];
+        oppDeck = new Card[3];
         oppDeck[0] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
-        oppDeck[1] = new Card("Spy Turtle", new int[] { 1, 3, 5, 7, 9 }, 0, 1);
-        oppDeck[2] = new Card("Defender Turtle", new int[] { 1, 3, 7, 9 }, -1, 2);
-        oppDeck[3] = new Card("Magic Turtle", new int[] { 2, 4, 6, 8 }, 1, 3);
+        oppDeck[1] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
+        oppDeck[2] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
         foreach (Card i in oppDeck)
         {
             i.own = false;
@@ -166,7 +172,7 @@ public class Cards : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit raycastHit;
-        if (!effectActive)
+        if (!effectActive && !isChoosing)
         {
             if (isPlacing == false && phase == "action")
             {
@@ -182,6 +188,7 @@ public class Cards : MonoBehaviour
                                 {
                                     StartCoroutine(placing(handCards[i], handObjects[i], i));
                                     isPlacing = true;
+                                    break;
                                 }
                                 else
                                 {
@@ -210,13 +217,97 @@ public class Cards : MonoBehaviour
 
             if (phase == "draw")
             {
-                if (deck.Length == 0)
+                bool isBusiness = false;
+                foreach (Card c in board) //Business Turtle
+                {
+                    if (c != null && c.getPassiveID() == 5 && c.getOwn())
+                    {
+                        isBusiness = true;
+                        Array.Resize(ref handCards, 4);
+                        Array.Resize(ref handObjects, 4);
+                    }
+                }
+                if (!isBusiness && handCards.Length > 3)
+                {
+                    for (int j = 0; j < handCards.Length; j++)
+                    {
+                        if (handCards[j] != null)
+                        {
+                            handCards[0] = handCards[j];
+                            handObjects[0] = handObjects[j];
+                            j = handCards.Length;
+                        }
+                    }
+                    for (int j = 1; j < handCards.Length; j++)
+                    {
+                        if (handCards[j] != null)
+                        {
+                            handCards[1] = handCards[j];
+                            handObjects[1] = handObjects[j];
+                            j = handCards.Length;
+                        }
+                    }
+                    for (int j = 2; j < handCards.Length; j++)
+                    {
+                        if (handCards[j] != null)
+                        {
+                            handCards[2] = handCards[j];
+                            handObjects[2] = handObjects[j];
+                            j = handCards.Length;
+                        }
+                    }
+                    handObjects[0].transform.position = new Vector3(cardx[0], 0.9855669f, -4.71751f);
+                    handObjects[1].transform.position = new Vector3(cardx[1], 0.9855669f, -4.71751f);
+                    handObjects[2].transform.position = new Vector3(cardx[2], 0.9855669f, -4.71751f);
+                    Array.Resize(ref handObjects, 3);
+                    Array.Resize(ref handCards, 3);
+                }
+
+
+                int ownCount = 0;
+                int oppCount = 0;
+                foreach (Card c in board) //Evil Turtle
+                {
+                    if (c == null)
+                    {
+                        continue;
+                    }
+                    else if (c.getOwn())
+                    {
+                        ownCount++;
+                    }
+                    else
+                    {
+                        oppCount++;
+                    }
+                }
+                foreach (Card c in board)
+                {
+                    if (c != null && c.getPassiveID() == 6 && !c.getOwn())
+                    {
+                        if (handCards.Length > 2)
+                        {
+                            if (handCards[2] == null && handCards[3] == null)
+                            {
+                                Array.Resize(ref handCards, 2);
+                                Array.Resize(ref handObjects, 2);
+                            }
+                            else
+                            {
+                                isChoosing = true;
+                                StartCoroutine(choosing());
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                if (deck.Length == 0 || !handCards.Contains(null)) //Draw
                 {
                     phase = "opponent";
                 }
                 else if (Physics.Raycast(ray, out raycastHit) && raycastHit.collider.gameObject == deckObject && handCards.Contains(null) && Input.GetMouseButtonDown(0))
                 {
-                    Debug.Log("Drawing a card");
                     int randDraw = rnd.Next(0, deck.Length);
                     Card drawnCard = deck[randDraw];
                     deck[randDraw] = null;
@@ -249,51 +340,53 @@ public class Cards : MonoBehaviour
 
             if (phase == "opponent")
             {
-                Card drawnCard = null;
-                int randDraw = rnd.Next(0, oppDeck.Length);
-                drawnCard = oppDeck[randDraw];
-                oppDeck[randDraw] = null;
-                for (int i = 0; i < oppDeck.Length; i++)
+                if (oppDeck.Length != 0)
                 {
-                    if (oppDeck[i] == null)
+                    Card drawnCard = null;
+                    int randDraw = rnd.Next(0, oppDeck.Length);
+                    drawnCard = oppDeck[randDraw];
+                    oppDeck[randDraw] = null;
+                    for (int i = 0; i < oppDeck.Length; i++)
                     {
-                        oppDeck[i] = oppDeck[oppDeck.Length - 1];
-                        Array.Resize(ref oppDeck, oppDeck.Length - 1);
-                        break;
+                        if (oppDeck[i] == null)
+                        {
+                            oppDeck[i] = oppDeck[oppDeck.Length - 1];
+                            Array.Resize(ref oppDeck, oppDeck.Length - 1);
+                            break;
+                        }
                     }
-                }
-                for (int i = 0; i < 8; i++)
-                {
-                    if (board[i] == null && drawnCard.getplacement().Contains(i + 1))
+                    for (int i = 0; i < 8; i++)
                     {
-                        board[i] = drawnCard;
-                        float cardX = 0.587f;
-                        float cardZ = -1.689f;
-                        if (i == 0 || i == 3 || i == 6)
+                        if (board[i] == null && drawnCard.getplacement().Contains(i + 1))
                         {
-                            cardX = -1.194f;
+                            board[i] = drawnCard;
+                            float cardX = 0.587f;
+                            float cardZ = -1.689f;
+                            if (i == 0 || i == 3 || i == 6)
+                            {
+                                cardX = -1.194f;
+                            }
+                            if (i == 2 || i == 5 || i == 8)
+                            {
+                                cardX = 2.377f;
+                            }
+                            if (i == 0 || i == 1 || i == 2)
+                            {
+                                cardZ = 1.118f;
+                            }
+                            if (i == 6 || i == 7 || i == 8)
+                            {
+                                cardZ = -4.502f;
+                            }
+                            GameObject cardPrefab = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardX, 0, cardZ), Quaternion.identity);
+                            cardPrefab.GetComponent<Rigidbody>().useGravity = true;
+                            cardPrefab.GetComponent<Rigidbody>().isKinematic = false;
+                            cardPrefab.layer = LayerMask.NameToLayer("Board");
+                            cardPrefab.transform.Rotate(0, 180f, 0);
+                            cardPrefab.transform.position = new Vector3(cardX, 0, cardZ);
+                            boardObj[i] = cardPrefab;
+                            break;
                         }
-                        if (i == 2 || i == 5 || i == 8)
-                        {
-                            cardX = 2.377f;
-                        }
-                        if (i == 0 || i == 1 || i == 2)
-                        {
-                            cardZ = 1.118f;
-                        }
-                        if (i == 6 || i == 7 || i == 8)
-                        {
-                            cardZ = -4.502f;
-                        }
-                        Debug.Log(cardX + " " + cardZ);
-                        GameObject cardPrefab = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardX, 0, cardZ), Quaternion.identity);
-                        cardPrefab.GetComponent<Rigidbody>().useGravity = true;
-                        cardPrefab.GetComponent<Rigidbody>().isKinematic = false;
-                        cardPrefab.layer = LayerMask.NameToLayer("Board");
-                        cardPrefab.transform.Rotate(0, 180f, 0);
-                        cardPrefab.transform.position = new Vector3(cardX, 0, cardZ);
-                        boardObj[i] = cardPrefab;
-                        break;
                     }
                 }
                 phase = "action";
@@ -302,7 +395,6 @@ public class Cards : MonoBehaviour
     }
     IEnumerator placing(Card currentCard, GameObject cardPrefab, int handIndex)
     {
-        Debug.Log("Card selected: " + currentCard.getName()); //debug
         cardPrefab = Instantiate(Turtles[currentCard.getPassiveID()], new Vector3(2.706f, 0, 1.689f), Quaternion.identity);
 
         cardPrefab.GetComponent<Rigidbody>().useGravity = false;
@@ -400,7 +492,83 @@ public class Cards : MonoBehaviour
                     selectedSquare = 5;
                 }
             }
-            if (currentCard.getplacement().Contains(selectedSquare) && board[selectedSquare - 1] == null)
+            if (currentCard.getPassiveID() == 4) //Attacker Turtle
+            {
+                bool canPlace = true;
+                if (board[selectedSquare - 1] != null)
+                {
+                    if (selectedSquare == 2)
+                    {
+                        if (board[0] != null && board[0].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                        if (board[2] != null && board[2].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                    }
+                    if (selectedSquare == 4)
+                    {
+                        if (board[0] != null && board[0].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                        if (board[6] != null && board[6].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                    }
+                    if (selectedSquare == 6)
+                    {
+                        if (board[2] != null && board[2].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                        if (board[8] != null && board[8].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                    }
+                    else if (selectedSquare == 8)
+                    {
+                        if (board[6] != null && board[6].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                        if (board[8] != null && board[8].getPassiveID() == 2)
+                        {
+                            canPlace = false;
+                        }
+                    }
+                }
+                else
+                {
+                    canPlace = true;
+                }
+                int[] atkPlace = new int[] { 2, 4, 6, 8 };
+                if (canPlace && atkPlace.Contains(selectedSquare))
+                {
+                    yesHighlights();
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        isPlacing = false;
+                        board[selectedSquare - 1] = currentCard;
+                        Destroy(boardObj[selectedSquare - 1]);
+                        boardObj[selectedSquare - 1] = cardPrefab;
+                        handCards[handIndex] = null;
+                        Destroy(handObjects[handIndex]);
+                        handObjects[handIndex] = null;
+                        StartCoroutine(effect(currentCard, cardPrefab));
+                        phase = "draw";
+                    }
+                }
+                else
+                {
+                    noHighlights();
+                }
+            }
+            else if (currentCard.getplacement().Contains(selectedSquare) && board[selectedSquare - 1] == null) //Every Other Turtle
             {
                 yesHighlights();
                 if (Input.GetMouseButtonDown(0))
@@ -457,7 +625,6 @@ public class Cards : MonoBehaviour
     IEnumerator effect(Card currentCard, GameObject cardPrefab)
     {
         effectActive = true;
-        bool own = currentCard.getOwn();
         while (effectActive)
         {
             if (currentCard.getPlayEffectID() == -1)
@@ -470,7 +637,12 @@ public class Cards : MonoBehaviour
                 phase = "draw";
                 effectActive = false;
             }
-            else if (currentCard.getPlayEffectID() == 1 && own)
+            else if (currentCard.getPlayEffectID() == 1 && !currentCard.getOwn())
+            {
+                phase = "draw";
+                effectActive = false;
+            }
+            else if (currentCard.getPlayEffectID() > 0 && currentCard.getOwn())
             {
                 bool chosing = true;
                 float initialX = Input.mousePosition.x;
@@ -550,6 +722,7 @@ public class Cards : MonoBehaviour
                             selectedSquare = 5;
                         }
                     }
+                    yield return new WaitForSeconds(0.000001f);
 
                     //Wizard
                     if (currentCard.getPlayEffectID() == 1)
@@ -566,6 +739,10 @@ public class Cards : MonoBehaviour
                                 StartCoroutine(effect(board[selectedSquare - 1], boardObj[selectedSquare - 1]));
                                 boardObj[selectedSquare - 1].transform.Rotate(0, 180f, 0);
                                 boardObj[selectedSquare - 1].transform.position += new Vector3(2.0824069f, 0.02110998f, 3.381845f);
+                                while (effectActive)
+                                {
+                                    yield return new WaitForSeconds(0.00000001f);
+                                }
                                 StartCoroutine(giveBack(board[selectedSquare - 1]));
                             }
                         }
@@ -575,7 +752,30 @@ public class Cards : MonoBehaviour
                         }
 
                     }
-                    //Turtle
+                    //War Turtle
+                    if (currentCard.getPlayEffectID() == 2)
+                    {
+                        if (board[selectedSquare - 1] != null)
+                        {
+                            yesHighlights();
+                            if (Input.GetMouseButtonDown(0))
+                            {
+                                chosing = false;
+                                disableHighlights();
+                                StartCoroutine(giveBack(board[selectedSquare - 1]));
+                                Destroy(boardObj[selectedSquare - 1]);
+                                boardObj[selectedSquare - 1] = cardPrefab;
+                                boardObj[selectedSquare - 1] = null;
+                                board[selectedSquare - 1] = null;
+                                effectActive = false;
+                            }
+                        }
+                        else
+                        {
+                            noHighlights();
+                        }
+
+                    }
                     if (initialX - 200 > Input.mousePosition.x)
                     {
                         initialX -= 60;
@@ -597,6 +797,7 @@ public class Cards : MonoBehaviour
                     if (Input.GetMouseButtonDown(1))
                     {
                         chosing = false;
+                        effectActive = false;
                         disableHighlights();
                     }
                 }
@@ -617,16 +818,100 @@ public class Cards : MonoBehaviour
             if (board[card.target].getOwn() == true && card.getOwn() == true)
             {
                 board[card.target].own = false;
-                effect(board[card.target], boardObj[card.target]);
+                boardObj[card.target].transform.Rotate(0, 180f, 0);
+                boardObj[card.target].transform.position -= new Vector3(2.0824069f, 0.02110998f, 3.381845f);
                 card.target = -1;
             }
-            if (board[card.target].getOwn() == false && card.getOwn() == false)
+            else if (board[card.target].getOwn() == false && card.getOwn() == false)
             {
                 board[card.target].own = true;
-                effect(board[card.target], boardObj[card.target]);
+                boardObj[card.target].transform.Rotate(0, 180f, 0);
+                boardObj[card.target].transform.position += new Vector3(2.0824069f, 0.02110998f, 3.381845f);
                 card.target = -1;
             }
-            yield return new WaitForSeconds(0.001f);
+        }
+        yield return new WaitForSeconds(0.001f);
+    }
+
+    IEnumerator choosing()
+    {
+        yield return new WaitForSeconds(0.00001f);
+        while (isChoosing)
+        {
+            yield return new WaitForSeconds(0.00001f);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit raycastHit;
+            if (Physics.Raycast(ray, out raycastHit))
+            {
+                for (int i = 0; i < handObjects.Length; i++)
+                {
+                    if (handObjects[i] != null)
+                    {
+                        if (raycastHit.collider.gameObject == handObjects[i])
+                        {
+                            if (Input.GetMouseButtonDown(0))
+                            {
+                                Destroy(handObjects[i]);
+                                handCards[i] = null;
+                                handObjects[i] = null;
+                            }
+                            else
+                            {
+                                handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, -4.3f);
+                            }
+                        }
+                        else
+                        {
+                            handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 0.9855669f, -4.71751f);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                foreach (GameObject i in handObjects)
+                {
+                    if (i != null)
+                    {
+                        i.transform.position = new Vector3(i.transform.position.x, 0.9855669f, -4.71751f);
+                    }
+                }
+            }
+            int cards = 0;
+            foreach (Card c in handCards)
+            {
+                if (c != null)
+                {
+                    cards++;
+                }
+            }
+            if (cards == 2)
+            {
+                for (int j = 0; j < handCards.Length; j++)
+                {
+                    if (handCards[j] != null)
+                    {
+                        handCards[0] = handCards[j];
+                        handObjects[0] = handObjects[j];
+                        j = handCards.Length;
+                    }
+                }
+                for (int j = 1; j < handCards.Length; j++)
+                {
+                    if (handCards[j] != null)
+                    {
+                        handCards[1] = handCards[j];
+                        handObjects[1] = handObjects[j];
+                        j = handCards.Length;
+                    }
+                }
+                handObjects[0].transform.position = new Vector3(cardx[0], 0.9855669f, -4.71751f);
+                handObjects[1].transform.position = new Vector3(cardx[1], 0.9855669f, -4.71751f);
+                Array.Resize(ref handObjects, 2);
+                Array.Resize(ref handCards, 2);
+                isChoosing = false;
+            }
+
         }
     }
 }

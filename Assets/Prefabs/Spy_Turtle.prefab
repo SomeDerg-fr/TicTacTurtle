@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 7684026299733685441}
   - component: {fileID: -9029547450877797914}
   m_Layer: 0
-  m_Name: Magic_Turtle Card
+  m_Name: Spy_Turtle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,8 +188,8 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5852041, y: 0.045510888, z: 2.572809}
-  m_Center: {x: -1.0452886, y: 0.16261166, z: -1.6842986}
+  m_Size: {x: 1.584435, y: 0.053127646, z: 2.5957713}
+  m_Center: {x: -1.0456731, y: 0.16642004, z: -1.6728175}
 --- !u!1 &8598902820104761504
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0fe0262061c7bce468d7c77695c9aa4e, type: 2}
+  - {fileID: 2100000, guid: 010649348bb441c4fa5cb6ebc585504d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

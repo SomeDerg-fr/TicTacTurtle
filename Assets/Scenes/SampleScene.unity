@@ -256,11 +256,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 252543cb5ecc16a469d5af758e89eb8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boardObj:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   Turtles:
   - {fileID: 4290667724937138049, guid: 087118c9c81871c4a84dd639cedc3c99, type: 3}
   - {fileID: 4290667724937138049, guid: 2a903a69cf8ad944e920fcf6445ad1a8, type: 3}
   - {fileID: 4290667724937138049, guid: 4e9c08e092793fe42813a95b212186f2, type: 3}
   - {fileID: 4290667724937138049, guid: fc27801b81d71624a92750c7f8e89f7c, type: 3}
+  - {fileID: 4290667724937138049, guid: f59cc0aa52f16d04fa7d4deb7b277062, type: 3}
+  - {fileID: 4290667724937138049, guid: bc945cd9036f6094c93f7ec3412567de, type: 3}
+  - {fileID: 4290667724937138049, guid: d05d9b557176f434eb6169c135237293, type: 3}
+  - {fileID: 4290667724937138049, guid: b756eb92a3dc8744798c4b7285414dfc, type: 3}
   highlights:
   - {fileID: 399796566}
   - {fileID: 1401280240}

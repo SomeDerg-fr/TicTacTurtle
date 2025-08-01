@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 7684026299733685441}
   - component: {fileID: -9029547450877797914}
   m_Layer: 0
-  m_Name: Defender_Turtle Card
+  m_Name: Attacker_Turtle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -254,7 +254,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 654996994d51b5c458111a9ffb54b387, type: 2}
+  - {fileID: 2100000, guid: 4942fb00e7997794ebd0c3eb53bee5c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
