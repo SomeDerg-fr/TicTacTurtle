@@ -92,9 +92,9 @@ public class Cards : MonoBehaviour
         deck[7] = new Card("War Turtle", new int[] { 1, 3, 7, 9 }, 2, 7);
 
         oppDeck = new Card[3];
-        oppDeck[0] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
-        oppDeck[1] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
-        oppDeck[2] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
+        oppDeck[0] = new Card("Evil Turtle", new int[] { 1, 3, 5, 7, 9 }, -1, 6);
+        oppDeck[1] = new Card("Evil Turtle", new int[] { 1, 3, 5, 7, 9 }, -1, 6);
+        oppDeck[2] = new Card("Evil Turtle", new int[] { 1, 3, 5, 7, 9 }, -1, 6);
         foreach (Card i in oppDeck)
         {
             i.own = false;
@@ -229,38 +229,23 @@ public class Cards : MonoBehaviour
                 }
                 if (!isBusiness && handCards.Length > 3)
                 {
+                    List<Card> newHandCards = new List<Card>();
+                    List<GameObject> newHandObjects = new List<GameObject>();
                     for (int j = 0; j < handCards.Length; j++)
                     {
                         if (handCards[j] != null)
                         {
-                            handCards[0] = handCards[j];
-                            handObjects[0] = handObjects[j];
-                            j = handCards.Length;
+                            newHandCards.Add(handCards[j]);
+                            newHandObjects.Add(handObjects[j]);
                         }
                     }
-                    for (int j = 1; j < handCards.Length; j++)
+                    for (int k = 0; k < newHandCards.Count && k < 3; k++)
                     {
-                        if (handCards[j] != null)
-                        {
-                            handCards[1] = handCards[j];
-                            handObjects[1] = handObjects[j];
-                            j = handCards.Length;
-                        }
+                        handCards[k] = newHandCards[k];
+                        handObjects[k] = newHandObjects[k];
                     }
-                    for (int j = 2; j < handCards.Length; j++)
-                    {
-                        if (handCards[j] != null)
-                        {
-                            handCards[2] = handCards[j];
-                            handObjects[2] = handObjects[j];
-                            j = handCards.Length;
-                        }
-                    }
-                    handObjects[0].transform.position = new Vector3(cardx[0], 0.9855669f, -4.71751f);
-                    handObjects[1].transform.position = new Vector3(cardx[1], 0.9855669f, -4.71751f);
-                    handObjects[2].transform.position = new Vector3(cardx[2], 0.9855669f, -4.71751f);
-                    Array.Resize(ref handObjects, 3);
                     Array.Resize(ref handCards, 3);
+                    Array.Resize(ref handObjects, 3);
                 }
 
 
@@ -887,26 +872,24 @@ public class Cards : MonoBehaviour
             }
             if (cards == 2)
             {
+                // Collect non-null cards and objects
+                List<Card> newHandCards = new List<Card>();
+                List<GameObject> newHandObjects = new List<GameObject>();
                 for (int j = 0; j < handCards.Length; j++)
                 {
                     if (handCards[j] != null)
                     {
-                        handCards[0] = handCards[j];
-                        handObjects[0] = handObjects[j];
-                        j = handCards.Length;
+                        newHandCards.Add(handCards[j]);
+                        newHandObjects.Add(handObjects[j]);
                     }
                 }
-                for (int j = 1; j < handCards.Length; j++)
+                // Assign to hand arrays
+                for (int k = 0; k < newHandCards.Count && k < 2; k++)
                 {
-                    if (handCards[j] != null)
-                    {
-                        handCards[1] = handCards[j];
-                        handObjects[1] = handObjects[j];
-                        j = handCards.Length;
-                    }
+                    handCards[k] = newHandCards[k];
+                    handObjects[k] = newHandObjects[k];
+                    handObjects[k].transform.position = new Vector3(cardx[k], 0.9855669f, -4.71751f);
                 }
-                handObjects[0].transform.position = new Vector3(cardx[0], 0.9855669f, -4.71751f);
-                handObjects[1].transform.position = new Vector3(cardx[1], 0.9855669f, -4.71751f);
                 Array.Resize(ref handObjects, 2);
                 Array.Resize(ref handCards, 2);
                 isChoosing = false;
