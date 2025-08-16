@@ -1,0 +1,28 @@
+<linker>
+	<assembly fullname="FishNet.Runtime">
+		<type fullname="FishNet.Component.Transforming.Beta.InitializationSettings" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Component.Transforming.Beta.MovementSettings" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Component.Transforming.NetworkTransform/ComponentConfigurationType" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Component.Transforming.NetworkTransform/SnappedAxes" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Object.NetworkObject/PredictionType" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Object.TransformProperties" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Serializing.TransformPackingData" preserve="nothing" serialized="true"/>
+		<type fullname="FishNet.Utility.Template.TickNetworkBehaviour/TickCallback" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="GameKit.Dependencies">
+		<type fullname="GameKit.Dependencies.Utilities.Types.FloatRange" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule">
+		<type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="UnityEngine.UI">
+		<type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true"/>
+	</assembly>
+</linker>

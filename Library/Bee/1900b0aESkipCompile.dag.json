@@ -26,11 +26,15 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "Extracting script serialization layouts",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Assets\\FishNet\\Runtime\\Plugins\\CodeAnalysis\\FishNet.CodeAnalysis.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\FishNet.Demos.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\FishNet.Runtime.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\GameKit.Dependencies.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Assets\\FishNet\\Runtime\\Plugins\\CodeAnalysis\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2023.2.20f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\ScriptAssemblies\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.ext.nunit@2.0.5\\net40\\unity-custom\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.5\\lib\\ReportGenerator\" -s=\"C:\\GameDevStuff\\TicTacTurtle\\Library\\PackageCache\\com.unity.visualscripting@1.8.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
+        "Library/ScriptAssemblies/FishNet.Demos.dll",
+        "Library/ScriptAssemblies/FishNet.Runtime.dll",
+        "Library/ScriptAssemblies/GameKit.Dependencies.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
@@ -43,6 +47,10 @@
         "Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
       "InputFlags": [
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -196,6 +204,9 @@
       "File": "Assets/csc.rsp"
     },
     {
+      "File": "Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
+    },
+    {
       "File": "Assets/mcs.rsp"
     },
     {
@@ -212,6 +223,15 @@
     },
     {
       "File": "Library/ScriptAssemblies/Assembly-CSharp.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/FishNet.Demos.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/FishNet.Runtime.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/GameKit.Dependencies.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.TextMeshPro.dll"

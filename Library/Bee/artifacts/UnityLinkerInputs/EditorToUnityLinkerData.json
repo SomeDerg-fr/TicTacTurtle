@@ -11,6 +11,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Button",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Cards",
             "moduleName": "",
             "usedInScenes": []
@@ -31,6 +38,160 @@
                 "Assets/Scenes/Game.unity",
                 "Assets/Scenes/Main Menu.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Component.Observing.SceneCondition",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Component.Prediction.NetworkTrigger",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Component.Spawning.PlayerSpawner",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Component.Transforming.Beta.NetworkTickSmoother",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Component.Transforming.NetworkTransform",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Demo.AdditiveScenes.Player",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Demo.Benchmarks.NetworkTransforms.MoveRandomlyNonPhysics",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Demo.Benchmarks.NetworkTransforms.MoveRandomlyPhysics",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Demo.HashGrid.MoveRandomly",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Demo.Prediction.CharacterControllers.CharacterControllerPrediction",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Demo.Prediction.Rigidbodies.RigidbodyPrediction",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Example.ColliderRollbacks.Aim",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Example.ColliderRollbacks.Fire",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Example.ColliderRollbacks.PlayerMotor",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Example.NetworkHudCanvases",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Example.Scened.PlayerController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Managing.NetworkManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Managing.Object.DefaultPrefabObjects",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Managing.Observing.ObserverManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Object.EmptyNetworkBehaviour",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Object.NetworkObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Observing.NetworkObserver",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -148,7 +309,8 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -229,7 +391,8 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -244,11 +407,48 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Canvas",
+            "fullManagedTypeName": "UnityEngine.Canvas",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CanvasRenderer",
+            "fullManagedTypeName": "UnityEngine.CanvasRenderer",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CapsuleCollider",
+            "fullManagedTypeName": "UnityEngine.CapsuleCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CharacterController",
+            "fullManagedTypeName": "UnityEngine.CharacterController",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Collider",
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -273,12 +473,30 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "FixedJoint",
+            "fullManagedTypeName": "UnityEngine.FixedJoint",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "GameObject",
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Game.unity",
                 "Assets/Scenes/Main Menu.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Joint",
+            "fullManagedTypeName": "UnityEngine.Joint",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -317,7 +535,8 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -326,7 +545,8 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -335,7 +555,8 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -344,7 +565,8 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -366,11 +588,21 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RectTransform",
+            "fullManagedTypeName": "UnityEngine.RectTransform",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Renderer",
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -411,10 +643,30 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SphereCollider",
+            "fullManagedTypeName": "UnityEngine.SphereCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Sprite",
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
-            "usedInScenes": []
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SpriteRenderer",
+            "fullManagedTypeName": "UnityEngine.SpriteRenderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Game.unity"
+            ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -422,7 +674,8 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/Game.unity"
+                "Assets/Scenes/Game.unity",
+                "Assets/Scenes/Main Menu.unity"
             ]
         },
         {
@@ -454,6 +707,41 @@
                 "Assets/Scenes/Game.unity",
                 "Assets/Scenes/Main Menu.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Button",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.CanvasScaler",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.RawImage",
+            "moduleName": "",
+            "usedInScenes": []
         }
     ],
     "allNativeTypes": [

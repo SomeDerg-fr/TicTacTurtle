@@ -118,6 +118,8 @@ GameObject:
   - component: {fileID: 7520879734426049091}
   - component: {fileID: 7684026299733685441}
   - component: {fileID: -9029547450877797914}
+  - component: {fileID: 9082801379582879540}
+  - component: {fileID: -4945896691761528670}
   m_Layer: 0
   m_Name: War_Turtle
   m_TagString: Untagged
@@ -190,6 +192,74 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5852041, y: 0.045510888, z: 2.572809}
   m_Center: {x: -1.0452886, y: 0.16261166, z: -1.6842986}
+--- !u!114 &9082801379582879540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4290667724937138049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b716c41e9b56b4baafaf13a523ba2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsNested>k__BackingField: 0
+  WasActiveDuringEdit: 0
+  WasActiveDuringEdit_Set1: 1
+  <ComponentIndex>k__BackingField: 0
+  <PredictedSpawn>k__BackingField: {fileID: 0}
+  <PredictedOwner>k__BackingField: {fileID: 0}
+  NetworkBehaviours:
+  - {fileID: -4945896691761528670}
+  InitializedParentNetworkBehaviour: {fileID: 0}
+  InitializedNestedNetworkObjects: []
+  RuntimeParentNetworkBehaviour: {fileID: 0}
+  RuntimeChildNetworkBehaviours: []
+  _isNetworked: 1
+  _isSpawnable: 1
+  _isGlobal: 0
+  _initializeOrder: 0
+  _preventDespawnOnDisconnect: 0
+  _defaultDespawnType: 0
+  NetworkObserver: {fileID: 0}
+  _enablePrediction: 0
+  _predictionType: 0
+  _graphicalObject: {fileID: 0}
+  _detachGraphicalObject: 0
+  _enableStateForwarding: 1
+  _networkTransform: {fileID: 0}
+  _ownerInterpolation: 1
+  _ownerSmoothedProperties: 255
+  _adaptiveInterpolation: 3
+  _spectatorSmoothedProperties: 255
+  _spectatorInterpolation: 2
+  _enableTeleport: 0
+  _teleportThreshold: 1
+  <PrefabId>k__BackingField: 5
+  <SpawnableCollectionId>k__BackingField: 0
+  <AssetPathHash>k__BackingField: 1815507356487392813
+  <SceneId>k__BackingField: 0
+  SerializedTransformProperties:
+    Position: {x: 1.9573278, y: 2.0381012, z: -3.2580652}
+    Rotation: {x: 0, y: 0, z: 0, w: 1}
+    Scale: {x: 1, y: 1, z: 1}
+    IsValid: 1
+--- !u!114 &-4945896691761528670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4290667724937138049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6a39c46bf52104ba8efe3100bce3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 0
+  _addedNetworkObject: {fileID: 9082801379582879540}
+  _networkObjectCache: {fileID: 9082801379582879540}
 --- !u!1 &8598902820104761504
 GameObject:
   m_ObjectHideFlags: 0

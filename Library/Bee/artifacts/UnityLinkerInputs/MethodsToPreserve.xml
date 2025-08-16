@@ -1,0 +1,7 @@
+<linker>
+	<assembly fullname="FishNet.Demos" ignoreIfMissing="1">
+		<type fullname="FishNet.Example.NetworkHudCanvases">
+			<method name="OnClick_Client"/>
+		</type>
+	</assembly>
+</linker>

@@ -1,7 +1,32 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Button
     - Cards
+    FishNet.Demos.dll:
+    - FishNet.Demo.AdditiveScenes.Player
+    - FishNet.Demo.Benchmarks.NetworkTransforms.MoveRandomlyNonPhysics
+    - FishNet.Demo.Benchmarks.NetworkTransforms.MoveRandomlyPhysics
+    - FishNet.Demo.HashGrid.MoveRandomly
+    - FishNet.Demo.Prediction.CharacterControllers.CharacterControllerPrediction
+    - FishNet.Demo.Prediction.Rigidbodies.RigidbodyPrediction
+    - FishNet.Example.ColliderRollbacks.Aim
+    - FishNet.Example.ColliderRollbacks.Fire
+    - FishNet.Example.ColliderRollbacks.PlayerMotor
+    - FishNet.Example.NetworkHudCanvases
+    - FishNet.Example.Scened.PlayerController
+    FishNet.Runtime.dll:
+    - FishNet.Component.Observing.SceneCondition
+    - FishNet.Component.Prediction.NetworkTrigger
+    - FishNet.Component.Spawning.PlayerSpawner
+    - FishNet.Component.Transforming.Beta.NetworkTickSmoother
+    - FishNet.Component.Transforming.NetworkTransform
+    - FishNet.Managing.NetworkManager
+    - FishNet.Managing.Object.DefaultPrefabObjects
+    - FishNet.Managing.Observing.ObserverManager
+    - FishNet.Object.EmptyNetworkBehaviour
+    - FishNet.Object.NetworkObject
+    - FishNet.Observing.NetworkObserver
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -9,8 +34,39 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses: {}
-  methodsToPreserve: []
+    UnityEngine.UI.dll:
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
+  serializedClasses:
+    FishNet.Runtime:
+    - FishNet.Component.Transforming.Beta.InitializationSettings
+    - FishNet.Component.Transforming.Beta.MovementSettings
+    - FishNet.Component.Transforming.NetworkTransform/ComponentConfigurationType
+    - FishNet.Component.Transforming.NetworkTransform/SnappedAxes
+    - FishNet.Object.NetworkObject/PredictionType
+    - FishNet.Object.TransformProperties
+    - FishNet.Serializing.TransformPackingData
+    - FishNet.Utility.Template.TickNetworkBehaviour/TickCallback
+    GameKit.Dependencies:
+    - GameKit.Dependencies.Utilities.Types.FloatRange
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
+    - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: FishNet.Demos
+    fullTypeName: FishNet.Example.NetworkHudCanvases
+    methodName: OnClick_Client
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -44,12 +100,84 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 30280}
+      Script: {instanceID: 25948}
+    - Class: 114
+      Script: {instanceID: 26266}
+    - Class: 114
+      Script: {instanceID: 26280}
+    - Class: 114
+      Script: {instanceID: 26408}
+    - Class: 114
+      Script: {instanceID: 27214}
+    - Class: 114
+      Script: {instanceID: 27746}
+    - Class: 114
+      Script: {instanceID: 27772}
+    - Class: 114
+      Script: {instanceID: 28198}
+    - Class: 114
+      Script: {instanceID: 28244}
+    - Class: 114
+      Script: {instanceID: 28264}
+    - Class: 114
+      Script: {instanceID: 28302}
+    - Class: 114
+      Script: {instanceID: 28732}
+    - Class: 114
+      Script: {instanceID: 29842}
+    - Class: 114
+      Script: {instanceID: 29858}
+    - Class: 114
+      Script: {instanceID: 29862}
+    - Class: 114
+      Script: {instanceID: 30354}
+    - Class: 114
+      Script: {instanceID: 30482}
+    - Class: 114
+      Script: {instanceID: 30600}
+    - Class: 114
+      Script: {instanceID: 30696}
+    - Class: 114
+      Script: {instanceID: 30714}
+    - Class: 114
+      Script: {instanceID: 30736}
+    - Class: 114
+      Script: {instanceID: 30774}
+    - Class: 114
+      Script: {instanceID: 31532}
+    - Class: 114
+      Script: {instanceID: 31888}
+    - Class: 114
+      Script: {instanceID: 31944}
+    - Class: 114
+      Script: {instanceID: 32472}
+    - Class: 114
+      Script: {instanceID: 32782}
+    - Class: 114
+      Script: {instanceID: 32868}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 138
+      Script: {instanceID: 0}
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Main Menu.unity:
     - Class: 1
@@ -60,9 +188,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -72,11 +208,45 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 26620}
+    - Class: 115
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 98c9cdc32649cea415149e17aa5329e2
+    assemblyName: Assembly-CSharp
+    namespaceName: FishNet.Upgrading.Mirror.Editing
+    className: UpgradeFromMirrorMenu
+  - hash:
+      serializedVersion: 2
+      Hash: e39b696af0974c9220ead54cddf50097
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.IntermediateLayers
+    className: IntermediateLayerCipher
+  - hash:
+      serializedVersion: 2
+      Hash: 67bc5e44b4935b89a85c407ac4e7dd6c
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types.CanvasContainers
+    className: ResizableContainer
+  - hash:
+      serializedVersion: 2
+      Hash: d7110bb335d03a585f7d46c5600bcb41
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.Scened
+    className: SceneUnloaderExample
+  - hash:
+      serializedVersion: 2
+      Hash: ea84d92886972657d2fd975eb4f1089a
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Editing
+    className: DebugManagerEditor
   - hash:
       serializedVersion: 2
       Hash: b2d2a01a2a85d9ed12e80cb33a9a6044
@@ -109,6 +279,24 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: 752e8c30e95bfdc033a7875c63208241
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types
+    className: RectTransformResizer
+  - hash:
+      serializedVersion: 2
+      Hash: 62add6a86d4a9a3092e9c7f03a3a87f8
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.ObjectPooling.Examples
+    className: Projectile
+  - hash:
+      serializedVersion: 2
+      Hash: 69f2e207560747da235276ecd47bc499
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Transporting.Multipass
+    className: Multipass
+  - hash:
+      serializedVersion: 2
       Hash: 5a4aa2850fe11587f47e34c270c7fd22
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -119,6 +307,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ae5d764c38a7257581a0501f4ce8e865
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.AdditiveScenes
+    className: ServerScenePrewarmer
   - hash:
       serializedVersion: 2
       Hash: 9ebc0a3016506a0cbb7e0306dfcb9497
@@ -145,6 +339,18 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: accd4728d87205c89986b01875c019cc
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.ObjectPooling
+    className: ObjectPool
+  - hash:
+      serializedVersion: 2
+      Hash: 62d1ff1a4fe4ddb56690772d00fcd2e3
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: TextCanvas
+  - hash:
+      serializedVersion: 2
       Hash: febcfbf0a0d85e37808a3740e3c2c6fa
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -155,6 +361,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 773b841acdc8b4f4333f540a0df7edd5
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example
+    className: NetworkHudCanvases
+  - hash:
+      serializedVersion: 2
+      Hash: 0280d135c42956542c225eb15a086382
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Object
+    className: NetworkObject
   - hash:
       serializedVersion: 2
       Hash: 8b15e35eb98fc258ec2e839df7c3c9b0
@@ -169,10 +387,22 @@ ScriptsOnlyBuild:
     className: PanelRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 72dc4f88c0c8bb4f0004bfaee2d50dfa
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming.Editing
+    className: NetworkTransformEditor
+  - hash:
+      serializedVersion: 2
       Hash: 7e12302f66e3c8ed5bcfea4ce65fccea
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e4127c552bbb6a89fafee28002e9a5d0
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Observing
+    className: ObserverManager
   - hash:
       serializedVersion: 2
       Hash: 682dfc653b22feea53b38adb3bc66414
@@ -199,10 +429,28 @@ ScriptsOnlyBuild:
     className: UnityOnBeginDragMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 8d6a9285db54f810c5246c7bc47b34d6
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.AdditiveScenes
+    className: Waypoint
+  - hash:
+      serializedVersion: 2
       Hash: 9dd54ce33440072d6692a67e0c384ad1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8fe78563f9efbfcfde591899da5caf80
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Transporting.Tugboat
+    className: Tugboat
+  - hash:
+      serializedVersion: 2
+      Hash: 99549630c578aa83a3451d28724711b4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: f669be52680c88846b2093fd41d1e06e
@@ -223,16 +471,40 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 1413deb228c2e53936de245b000e39ca
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: DistanceCondition
+  - hash:
+      serializedVersion: 2
       Hash: 8bf800a764665b085fe469e8aea7f167
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseEnterMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 8bff0eeac7694bd41b82dfe6b26e0de7
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing.Beta
+    className: BetaModeMenu
+  - hash:
+      serializedVersion: 2
       Hash: f854af586011dd194574f89546642e29
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ececacddf7fd0ee711660acb2c37fdf4
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Server.Editing
+    className: ServerManagerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 4ed9009cab5ae7182ef072c240173760
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming.Beta
+    className: OfflineTickSmootherEditor
   - hash:
       serializedVersion: 2
       Hash: c78ed13f6b5a632d70d4f73f56ad81f2
@@ -245,6 +517,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 742de62330a4c5c2b459f59b5fa1bc56
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Spawning
+    className: ServerSpawner
   - hash:
       serializedVersion: 2
       Hash: e6ee7dccba41ae87d10e3d922c6cb71c
@@ -277,16 +555,52 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
+      Hash: 8c95c14bcdce42631ac90f9eeadf4a58
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: DestroyAfterDelay
+  - hash:
+      serializedVersion: 2
+      Hash: 00fac2115f214d931c0c71bcd12b75b8
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Prediction.CharacterControllers
+    className: MovingPlatform
+  - hash:
+      serializedVersion: 2
+      Hash: cb711603ea594b5f21803af234d3dbc6
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming
+    className: DetachableNetworkTickSmoother
+  - hash:
+      serializedVersion: 2
+      Hash: 745781a3a425e774f1960f4f42c58283
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ComponentStateSync
+    className: ComponentSyncStateBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: 7bdff9e91edfd9600f92a185def7e34a
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptMachine
   - hash:
       serializedVersion: 2
+      Hash: 6229bbf2b5215a831420b770cfad79d9
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Observing.Editing
+    className: ObserverManagerEditor
+  - hash:
+      serializedVersion: 2
       Hash: 0a3f328f3ea906bbbcf794f4c27ee59d
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 242a922ad152998b4ff3be85cc6fe5c1
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming.Beta
+    className: OfflineTickSmoother
   - hash:
       serializedVersion: 2
       Hash: 96e7bcfd2d072992dab64ac44058b930
@@ -301,10 +615,22 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 2ca4e47645c8410043ab04cd2d042a86
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types.CanvasContainers
+    className: FloatingContainer
+  - hash:
+      serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 9e9d98fae6ad2372d69cfcddeb7f55dc
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Utility
+    className: PingDisplay
   - hash:
       serializedVersion: 2
       Hash: 1bc6ff8d02d2d68019aa6a028f8d409d
@@ -319,10 +645,46 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
+      Hash: bf2a6c2639a02c6341389a8f9b7dc3c7
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.HashGrid
+    className: MoveRandomly
+  - hash:
+      serializedVersion: 2
       Hash: d7c8092511063e0dae8106bfc8ed63dd
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e7b0268882820ac882fa94c8ac5269a1
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: MatchCondition
+  - hash:
+      serializedVersion: 2
+      Hash: 5838ec6bd094b15476cc62b54a58cf46
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Observing
+    className: NetworkObserver
+  - hash:
+      serializedVersion: 2
+      Hash: 99515b9f2a48bcc650d1d5c790e3b17a
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Scenes
+    className: DefaultScene
+  - hash:
+      serializedVersion: 2
+      Hash: 6d588ab10408d1d1a516a0bcb89fdcc0
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Transporting
+    className: NetworkWriterLoop
+  - hash:
+      serializedVersion: 2
+      Hash: e38076aa2f90334abd6f81b4eb873ae9
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Object
+    className: SinglePrefabObjects
   - hash:
       serializedVersion: 2
       Hash: 0b63f6d3335e11939ce8790b904c8691
@@ -335,6 +697,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerStayMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 76aec3b87430dd01dd97f3c76d22b39d
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types
+    className: CanvasGroupFader
   - hash:
       serializedVersion: 2
       Hash: 33656f83bb0079184b2206a69690ec46
@@ -367,10 +735,40 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 69fad94d0e65f853849877822f4d3fde
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Object
+    className: DualPrefabObjects
+  - hash:
+      serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 934db60b7e4a413f94c88386f887a89d
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Object
+    className: EmptyNetworkBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: ebd8aea2ac8dc16bb3a80b5d765d8678
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming.Beta
+    className: NetworkTickSmoother
+  - hash:
+      serializedVersion: 2
+      Hash: 6ed5840bbb3455837fc26efa7601d688
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Benchmarks.NetworkTransforms
+    className: MoveRandomlyNonPhysics
+  - hash:
+      serializedVersion: 2
+      Hash: 800be08a04348e1dad871a71bde54d2f
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: HashGrid
   - hash:
       serializedVersion: 2
       Hash: afb7b65d28d5a7423e69a1b076be0064
@@ -385,6 +783,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: a93e2aa1ae797385e2f1ddfeb171cba4
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: RollbackVisualizer
+  - hash:
+      serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -395,6 +799,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateMachine
+  - hash:
+      serializedVersion: 2
+      Hash: 57e1f083c4b082a8f060976bb01ee4a0
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing
+    className: FishNetGettingStartedEditor
   - hash:
       serializedVersion: 2
       Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
@@ -409,10 +819,40 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: a5bcd3b5f490220bd0f15348a2147749
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Scened
+    className: DefaultSceneProcessor
+  - hash:
+      serializedVersion: 2
+      Hash: f87c8e1770e0c0d593abf457459861b1
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Utility
+    className: BandwidthDisplay
+  - hash:
+      serializedVersion: 2
+      Hash: 3678e824920c539ab56e23fab9efd506
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.ColliderRollback
+    className: RollbackManager
+  - hash:
+      serializedVersion: 2
+      Hash: 39e8fdf18db75f119843f610fc7ba04d
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Prediction.CharacterControllers
+    className: CharacterControllerPrediction
+  - hash:
+      serializedVersion: 2
       Hash: 51b80d3734ea86b38e3101db98029e15
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 8a395da2a66cb0bf466f7e894b137ae6
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Ownership
+    className: PredictedOwner
   - hash:
       serializedVersion: 2
       Hash: 8bbce9932f67ad8e7f4eefec87800f94
@@ -431,6 +871,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 1bd335374e476ba6f75d2cdb20244eeb
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Timing
+    className: TimeManager
   - hash:
       serializedVersion: 2
       Hash: ad49e20f31ed572e586aa8bbaafb591b
@@ -463,6 +909,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDownMessageListener
   - hash:
       serializedVersion: 2
+      Hash: d940da845f7d0c0751cd4120a985f09d
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Object.Editing
+    className: NetworkObjectEditor
+  - hash:
+      serializedVersion: 2
       Hash: 7e9cad7f71f9cc52f699bbd2d2a75734
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -475,10 +927,28 @@ ScriptsOnlyBuild:
     className: MacroScriptableObject
   - hash:
       serializedVersion: 2
+      Hash: d5ebad2316dcfa8afc620094bc091519
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: Strafe
+  - hash:
+      serializedVersion: 2
       Hash: 5874b789cd9832847c61ebfa803213af
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 0f7e2f71e207e1dbf053cbc4a5e64b37
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.Authenticating
+    className: PasswordAuthenticator
+  - hash:
+      serializedVersion: 2
+      Hash: a5532ca208de8ca377a763fac93146d0
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Ownership
+    className: PredictedSpawn
   - hash:
       serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
@@ -499,6 +969,18 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 5c5492bfec47379c195ae385cc3b5736
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Server
+    className: ServerManager
+  - hash:
+      serializedVersion: 2
+      Hash: 92a7f63747eb24371b6ab197d846a801
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Logging.Editing
+    className: LevelLoggingConfigurationEditor
+  - hash:
+      serializedVersion: 2
       Hash: 02a47340661d2ea7c6d30e292cfef403
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -511,10 +993,28 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 51d474ab212336a6821377d08141427f
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.ObjectPooling.Examples
+    className: ProjectileSpawner
+  - hash:
+      serializedVersion: 2
       Hash: f295412bc00b58b9095a71e9764cc886
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 1b97e4370b952e31e75b18da18ace4c7
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Prediction.CharacterControllers
+    className: StaminaCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 4ea48c49f2c6d7758dea6655f83ac16f
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Client
+    className: ClientManager
   - hash:
       serializedVersion: 2
       Hash: 8e6dc3d79712ca4934f6d50c80f010b1
@@ -535,16 +1035,70 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 1237473ffe4b93518730b9093e5eadb7
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Debugging
+    className: DebugManager
+  - hash:
+      serializedVersion: 2
+      Hash: 9e36cfc1aa554e9cbe71d44ca2a5ab24
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.CustomSyncObject
+    className: StructSyncBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: f30a914f6b130d75fbd292d7d97e0caf
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ComponentStateSync
+    className: AMonoScript
+  - hash:
+      serializedVersion: 2
       Hash: b5007673bbbdb9d12597a1d8201370f5
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 4f525157091dc4ff85010856fed5f76a
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: Fire
+  - hash:
+      serializedVersion: 2
+      Hash: 29ba5c6089db31ba320f8dac70f6a812
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Spawning
+    className: PlayerSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 015113fbab35c4b0c394e4ff68f229ae
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types
+    className: DDOL
+  - hash:
+      serializedVersion: 2
+      Hash: 2b1907a81f27f3d7f39ef7b7e6776492
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.AdditiveScenes
+    className: Player
+  - hash:
+      serializedVersion: 2
+      Hash: b601e382953276808c36fa6f7facdec6
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Prediction
+    className: NetworkTrigger2D
+  - hash:
+      serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 344849e065c8a1cab18c8eaf83dd5842
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.ColliderRollback
+    className: ColliderRollbackEditor
   - hash:
       serializedVersion: 2
       Hash: f45600bcc886206dd55a3208474aad61
@@ -563,6 +1117,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 8162055909d038df3390ab09f49779dd
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.ColliderRollback
+    className: ColliderRollback
   - hash:
       serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
@@ -607,6 +1167,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 539ecdba17de87bbfc3e50cc5895cb47
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.Scened
+    className: SceneLoaderExample
+  - hash:
+      serializedVersion: 2
       Hash: 8dc40a01667ca02b3354a4e7a61be082
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -625,16 +1191,52 @@ ScriptsOnlyBuild:
     className: UnityOnDeselectMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 0912486345b918e0a130bebed83d4ceb
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing.NewNetworkBehaviourScript
+    className: CreateNewNetworkBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: AnimatorMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 4cffa4f956caac44b893039bc45eb56d
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Prediction
+    className: OfflineRigidbody
+  - hash:
+      serializedVersion: 2
+      Hash: 68c87d34c5ec5ff9bf9408cd22dccf2b
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Benchmarks.NetworkTransforms
+    className: MoveRandomlyPhysics
+  - hash:
+      serializedVersion: 2
       Hash: 4878e735441f4041539853759559c86f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 48e5f1b0823561e298a894b57e81a988
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.AdditiveScenes
+    className: LevelLoader
+  - hash:
+      serializedVersion: 2
+      Hash: ad3453a4cfcb039245c6ef730ea4188f
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing
+    className: DelayedEditorTasks
+  - hash:
+      serializedVersion: 2
+      Hash: 3ee951562e7177f246fd882ed5ac9c40
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Prediction
+    className: NetworkTrigger
   - hash:
       serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
@@ -667,16 +1269,46 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: b16749b288ee9a42b4affc22534c6ce4
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Object
+    className: DefaultPrefabObjects
+  - hash:
+      serializedVersion: 2
       Hash: 185e7bacfbbc5defefa609c70f7ff4ce
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: 143e9f4cf5b1173078384912df19f81d
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.Scened
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: e402a382f213255c22bda9254dd831b3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: SceneVariables
+  - hash:
+      serializedVersion: 2
+      Hash: 936902165881af87ff612480ae8196c6
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: Aim
+  - hash:
+      serializedVersion: 2
+      Hash: 361e328f3745deb81a7a75d38b556e55
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming
+    className: NetworkTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 9626bdfb54d0e7dd719986e69b4fc1d1
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming.Beta
+    className: NetworkTickSmootherEditor
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -691,10 +1323,40 @@ ScriptsOnlyBuild:
     className: UnityOnPointerEnterMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 5659132dc8fe1af600583a1cea620003
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types
+    className: SmoothCameraTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 14c06bc9c40cb6bc9b6a10104c22e377
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Prediction
+    className: NetworkCollision
+  - hash:
+      serializedVersion: 2
+      Hash: 288c9016c8b5196712ab327528a2c03a
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: OwnerOnlyCondition
+  - hash:
+      serializedVersion: 2
+      Hash: a4efe8d4aabafbb274c1af75a0e22eb1
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming
+    className: MonoTickSmoother
+  - hash:
+      serializedVersion: 2
       Hash: 00eef92bf387da2c9009267123d9d674
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 5c8abb606a59ec60fea11c10fce934cd
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Transporting
+    className: NetworkReaderLoop
   - hash:
       serializedVersion: 2
       Hash: 28fd3d045acc780719a17f02073eb448
@@ -703,10 +1365,28 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
+      Hash: 320679aee44a4d2f2291e6dc624d26bc
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Animating.Editing
+    className: NetworkAnimatorEditor
+  - hash:
+      serializedVersion: 2
       Hash: ca7965796a6fc0e5baad4cb19f5b5ded
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnJointBreak2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c805cf76c4df39e097d645fb484b86a2
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Logging
+    className: LevelLoggingConfiguration
+  - hash:
+      serializedVersion: 2
+      Hash: f709a1d6a2ed1ee383ad8888988c3995
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types.OptionMenuButtons
+    className: FloatingOptions
   - hash:
       serializedVersion: 2
       Hash: 4fcf0bb4aff1d14a1dfcdedc4b07bd05
@@ -727,10 +1407,22 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStayMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 4274fcfeed011a0ec501fa74f91ea8a0
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Editing
+    className: NetworkManagerEditor
+  - hash:
+      serializedVersion: 2
       Hash: 1ab136900c0edaeeb49424c852595030
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 61857a432650461ea03aa4b07b7007db
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Predicting
+    className: PredictionManager
   - hash:
       serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
@@ -751,10 +1443,22 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: c7e9000ae0cbd7034e0fefc2356c7991
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Scened
+    className: SceneManager
+  - hash:
+      serializedVersion: 2
       Hash: 9ebb206587356b4f57cd7f4108f0f87f
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 7951dcc7fcd63507277414ddae311fc9
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing
+    className: ReviewReminderEditor
   - hash:
       serializedVersion: 2
       Hash: f2098fcd8ee983a05ec192f63904298f
@@ -763,10 +1467,52 @@ ScriptsOnlyBuild:
     className: UnityOnEndDragMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 14a7a9f0a60e7336f2e8bcec4f7573a0
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Timing.Editing
+    className: TimeManagerEditor
+  - hash:
+      serializedVersion: 2
       Hash: 1799e2459e3f656b6f21094fd998eaee
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 4957cf96201e6df32838bd5762f4c2ee
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing
+    className: ConfigurationEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 595f78679226fde70833dbee7abf1b73
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Transforming.Editing
+    className: DetachableNetworkTickSmootherEditor
+  - hash:
+      serializedVersion: 2
+      Hash: d4a06847a5b3ff4146445bb69043b023
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Transporting
+    className: TransportManager
+  - hash:
+      serializedVersion: 2
+      Hash: aba6c5a6b60f3c886a698160bcefd2f2
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: HostOnlyCondition
+  - hash:
+      serializedVersion: 2
+      Hash: 70deca725de7f3c3ef6aaf4c74860122
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: GridCondition
+  - hash:
+      serializedVersion: 2
+      Hash: 3b02fca1a420cbfb492ef5d4cf795c95
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Observing
+    className: SceneCondition
   - hash:
       serializedVersion: 2
       Hash: c4b85a67513b4f0cf7b5fb2d5ded04b0
@@ -781,10 +1527,40 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 319119f32576bc5d1cce604ede989939
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing
+    className: NetworkManager
+  - hash:
+      serializedVersion: 2
+      Hash: ba9de1d0b8ae98bc7b0d7086153871fd
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Statistic
+    className: StatisticsManager
+  - hash:
+      serializedVersion: 2
+      Hash: 3dc67d83830031fcaa68434177ecc1bf
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Transporting.Yak
+    className: Yak
+  - hash:
+      serializedVersion: 2
+      Hash: f604c8bbe10fa34a4e9b5697286d9e04
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Client.Editing
+    className: ClientManagerEditor
+  - hash:
+      serializedVersion: 2
       Hash: 43ebd945b04bced376c791411cf5a289
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSelectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e6133a7e49d60855aee4114b9646bcc1
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: PlayerCamera
   - hash:
       serializedVersion: 2
       Hash: db6133687572f9dc24f1fd4238ef9b83
@@ -793,16 +1569,64 @@ ScriptsOnlyBuild:
     className: TextMeshPro
   - hash:
       serializedVersion: 2
+      Hash: 6d848fd1e79a415c13a579e8342f93c5
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Utility.Performance
+    className: DefaultObjectPool
+  - hash:
+      serializedVersion: 2
+      Hash: 6dd8ae67dfe07e94ae3a34401f0ea1db
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Transporting.Tugboat.Editing
+    className: TugboatEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 8e7e35174b4d80decdd7bd49c5cfb3a2
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Benchmarks.NetworkTransforms
+    className: PrefabSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 10c17b309bdca62b4d7fbaf113ed4ca0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: 59fc7df8915966c2904636b099425fb8
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Prediction
+    className: NetworkCollision2D
+  - hash:
+      serializedVersion: 2
+      Hash: e6636e0523515ddeb6b2db241aad3bfb
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Component.Animating
+    className: NetworkAnimator
+  - hash:
+      serializedVersion: 2
       Hash: 13f262cc0741566a7ab72682984bc3e1
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: ada107a2e38302b3b9c4e867fc6093d8
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Editing
+    className: ReserializeNetworkObjectsEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 1a85a2503cea85d98cfb1c0a5249b930
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Example.ColliderRollbacks
+    className: PlayerMotor
+  - hash:
+      serializedVersion: 2
+      Hash: 94df6005096f9833537111a110a3bcb4
+    assemblyName: GameKit.Dependencies
+    namespaceName: GameKit.Dependencies.Utilities.Types.CanvasContainers
+    className: FloatingImage
   - hash:
       serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
@@ -815,6 +1639,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseOverMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e7331cf89946257e2d2b18077729ab6f
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Prediction.Rigidbodies
+    className: Boost
   - hash:
       serializedVersion: 2
       Hash: 83cfda82082c233d96cc677c19f57e07
@@ -835,10 +1665,22 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 58de214ba474450d719f4878bf1c19ed
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.HashGrid
+    className: GridSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStay2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b02bca3e855d3a4d0946ae12fb90f529
+    assemblyName: FishNet.Demos
+    namespaceName: FishNet.Demo.Prediction.Rigidbodies
+    className: RigidbodyPrediction
   - hash:
       serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
@@ -847,7 +1689,7 @@ ScriptsOnlyBuild:
     className: UnityOnBecameInvisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 205c127fa53231ac17d6a05407ea7cbd
+      Hash: 660eafa92f33745deb3c7218a82d4e45
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cards
@@ -865,10 +1707,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 99549630c578aa83a3451d28724711b4
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Button
+      Hash: e5bc8d9f5b47d0fbee926a97b15a9bd7
+    assemblyName: FishNet.Runtime
+    namespaceName: FishNet.Managing.Predicting.Editing
+    className: PredictionManagerEditor
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

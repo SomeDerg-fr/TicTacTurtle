@@ -78,8 +78,8 @@
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\Hashing.cs" />
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\Types\SmoothCameraTarget.cs" />
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\Maths.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\ApplicationState.cs" />
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\Types\Canvases\FloatingContainer.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\ApplicationState.cs" />
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\Types\ScrollbarValueSetter.cs" />
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\Materials.cs" />
     <Compile Include="Assets\FishNet\Runtime\Plugins\GameKit\Dependencies\Utilities\HashSets.cs" />
@@ -595,6 +595,10 @@
       <HintPath>Library\PackageCache\com.unity.ext.nunit@2.0.5\net40\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="FishNet.CodeAnalysis">
+      <HintPath>Assets\FishNet\Runtime\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
@@ -625,10 +629,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="FishNet.CodeAnalysis">
-      <HintPath>Assets\FishNet\Runtime\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

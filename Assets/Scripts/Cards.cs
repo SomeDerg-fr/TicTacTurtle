@@ -12,13 +12,21 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.LowLevelPhysics;
 using UnityEngine.UIElements;
+using FishNet.Connection;
+using FishNet.Object;
+using FishNet.Example.ColliderRollbacks;
+using FishNet.Example.Scened;
+using FishNet.Object.Synchronizing;
+using FishNet.Object.Synchronizing.Internal;
 
-public class Cards : MonoBehaviour
+public class Cards : NetworkBehaviour
 {
     public Card[] board = new Card[9];
     public GameObject[] boardObj = new GameObject[9];
-    bool isPlacing = false;
-    bool isChoosing = false;
+    public bool isPlacing = false;
+    public bool isChoosing = false;
+    private int playerNumber;
+    public int players = 0;
     System.Random rnd = new System.Random();
 
     int UILayer;
@@ -78,7 +86,35 @@ public class Cards : MonoBehaviour
     GameObject[] handObjects = new GameObject[3];
     float[] cardx = new float[] { -0.727f, 1.06f, 2.847f, 4.634f };
     String phase = "action";
+    private Camera playerCamera;
 
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        if (base.IsOwner)
+        {
+        }
+        else
+        {
+            players += 1;
+            playerNumber = players;
+            if (playerNumber == 1)
+            {
+                playerCamera = GameObject.Find("P1_Camera").GetComponent<Camera>();
+                Debug.Log(playerCamera.name + " Camera");
+                GameObject P2_Camera = GameObject.Find("P2_Camera");
+                P2_Camera.SetActive(false);
+            }
+            else if (playerNumber == 2)
+            {
+                GetComponent<Cards>().enabled = false;
+                playerCamera = GameObject.Find("P2_Camera").GetComponent<Camera>();
+                Debug.Log(playerCamera.name + " Camera");
+                GameObject P1_Camera = GameObject.Find("P1_Camera");
+                P1_Camera.SetActive(false);
+            }
+        }
+    }
     void Start()
     {
         deck = new Card[Turtles.Length];
@@ -119,14 +155,18 @@ public class Cards : MonoBehaviour
         handObjects[0] = Instantiate(Turtles[handCards[0].getPassiveID()], new Vector3(cardx[0], 0.9855669f, -4.71751f), Quaternion.identity);
         handObjects[0].transform.Rotate(-24.838f, 0, 0);
         handObjects[0].layer = LayerMask.NameToLayer("Hand");
+        ServerManager.Spawn(handObjects[0]);
 
         handObjects[1] = Instantiate(Turtles[handCards[1].getPassiveID()], new Vector3(cardx[1], 0.9855669f, -4.71751f), Quaternion.identity);
         handObjects[1].transform.Rotate(-24.838f, 0, 0);
         handObjects[1].layer = LayerMask.NameToLayer("Hand");
+        ServerManager.Spawn(handObjects[1]);
 
         handObjects[2] = Instantiate(Turtles[handCards[2].getPassiveID()], new Vector3(cardx[2], 0.9855669f, -4.71751f), Quaternion.identity);
         handObjects[2].transform.Rotate(-24.838f, 0, 0);
         handObjects[2].layer = LayerMask.NameToLayer("Hand");
+        ServerManager.Spawn(handObjects[2]);
+        
     }
     Ray ray;
     RaycastHit hit;
@@ -170,7 +210,7 @@ public class Cards : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit raycastHit;
         if (!effectActive && !isChoosing)
         {
@@ -313,6 +353,7 @@ public class Cards : MonoBehaviour
                             handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, -4.71751f), Quaternion.identity);
                             handObjects[i].transform.Rotate(-24.838f, 0, 0);
                             handObjects[i].layer = LayerMask.NameToLayer("Hand");
+                            ServerManager.Spawn(handObjects[i]);
                             break;
                         }
                     }
@@ -370,6 +411,7 @@ public class Cards : MonoBehaviour
                             cardPrefab.transform.Rotate(0, 180f, 0);
                             cardPrefab.transform.position = new Vector3(cardX, 0, cardZ);
                             boardObj[i] = cardPrefab;
+                            ServerManager.Spawn(cardPrefab);
                             break;
                         }
                     }
@@ -381,6 +423,7 @@ public class Cards : MonoBehaviour
     IEnumerator placing(Card currentCard, GameObject cardPrefab, int handIndex)
     {
         cardPrefab = Instantiate(Turtles[currentCard.getPassiveID()], new Vector3(2.706f, 0, 1.689f), Quaternion.identity);
+        ServerManager.Spawn(cardPrefab);
 
         cardPrefab.GetComponent<Rigidbody>().useGravity = false;
         float initialX = Input.mousePosition.x;
@@ -540,9 +583,11 @@ public class Cards : MonoBehaviour
                         isPlacing = false;
                         board[selectedSquare - 1] = currentCard;
                         Destroy(boardObj[selectedSquare - 1]);
+                        ServerManager.Despawn(boardObj[selectedSquare - 1]);
                         boardObj[selectedSquare - 1] = cardPrefab;
                         handCards[handIndex] = null;
                         Destroy(handObjects[handIndex]);
+                        ServerManager.Despawn(handObjects[handIndex]);
                         handObjects[handIndex] = null;
                         StartCoroutine(effect(currentCard, cardPrefab));
                         phase = "draw";
@@ -563,6 +608,7 @@ public class Cards : MonoBehaviour
                     boardObj[selectedSquare - 1] = cardPrefab;
                     handCards[handIndex] = null;
                     Destroy(handObjects[handIndex]);
+                    ServerManager.Despawn(handObjects[handIndex]);
                     StartCoroutine(effect(currentCard, cardPrefab));
                     phase = "draw";
                 }
@@ -595,6 +641,7 @@ public class Cards : MonoBehaviour
                 isPlacing = false;
                 disableHighlights();
                 Destroy(cardPrefab);
+                ServerManager.Despawn(cardPrefab);
                 yield break;
             }
         }
@@ -749,6 +796,7 @@ public class Cards : MonoBehaviour
                                 disableHighlights();
                                 StartCoroutine(giveBack(board[selectedSquare - 1]));
                                 Destroy(boardObj[selectedSquare - 1]);
+                                ServerManager.Despawn(boardObj[selectedSquare - 1]);
                                 boardObj[selectedSquare - 1] = cardPrefab;
                                 boardObj[selectedSquare - 1] = null;
                                 board[selectedSquare - 1] = null;
@@ -824,7 +872,7 @@ public class Cards : MonoBehaviour
         while (isChoosing)
         {
             yield return new WaitForSeconds(0.00001f);
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastHit;
             if (Physics.Raycast(ray, out raycastHit))
             {
@@ -837,6 +885,7 @@ public class Cards : MonoBehaviour
                             if (Input.GetMouseButtonDown(0))
                             {
                                 Destroy(handObjects[i]);
+                                ServerManager.Despawn(handObjects[i]);
                                 handCards[i] = null;
                                 handObjects[i] = null;
                             }
@@ -872,7 +921,6 @@ public class Cards : MonoBehaviour
             }
             if (cards == 2)
             {
-                // Collect non-null cards and objects
                 List<Card> newHandCards = new List<Card>();
                 List<GameObject> newHandObjects = new List<GameObject>();
                 for (int j = 0; j < handCards.Length; j++)
@@ -883,7 +931,6 @@ public class Cards : MonoBehaviour
                         newHandObjects.Add(handObjects[j]);
                     }
                 }
-                // Assign to hand arrays
                 for (int k = 0; k < newHandCards.Count && k < 2; k++)
                 {
                     handCards[k] = newHandCards[k];

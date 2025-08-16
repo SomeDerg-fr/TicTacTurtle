@@ -1,482 +1,473 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1753459399863002, "dur":33440, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1753459399896451, "dur":72, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1753459399896547, "dur":295, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1753459399896863, "dur":2401, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1753459399899265, "dur":1316332, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1753459401215600, "dur":252, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1753459401215982, "dur":2084, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1753459399897127, "dur":2142, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1753459399899270, "dur":11565, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1753459399910893, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1753459399910963, "dur":1419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker C:/GameDevStuff/TicTacTurtle/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
-,{ "pid":12345, "tid":1, "ts":1753459399912382, "dur":3038, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1753459399919264, "dur":49575, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459399919163, "dur":49679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459399969144, "dur":1290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459399970552, "dur":48795, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459399970453, "dur":48897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400019380, "dur":1419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400020860, "dur":32404, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400020804, "dur":32462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400053302, "dur":1347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400054704, "dur":72841, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400054652, "dur":72895, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400127560, "dur":2520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400130145, "dur":63484, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400130082, "dur":63549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400193638, "dur":24363, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1753459400218005, "dur":4532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400222602, "dur":31727, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400222540, "dur":31790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400254385, "dur":1449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400255889, "dur":134649, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400255836, "dur":134704, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400390562, "dur":2409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400393041, "dur":49150, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400392976, "dur":49217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400442215, "dur":1475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400443754, "dur":39988, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400443694, "dur":40052, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400483800, "dur":2149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400486064, "dur":42423, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400485953, "dur":42536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400528517, "dur":3764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400532346, "dur":267440, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400532287, "dur":267501, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400799841, "dur":2680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400802582, "dur":49826, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400802526, "dur":49884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400852423, "dur":95128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400947614, "dur":99433, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459400947557, "dur":99498, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459401047107, "dur":2238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1753459401049349, "dur":166243, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399897161, "dur":2116, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399899279, "dur":1175, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399900455, "dur":1665, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399902120, "dur":1019, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399903139, "dur":7716, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399910857, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1753459399910934, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399911054, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1753459399911160, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399911261, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":2, "ts":1753459399911344, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399911457, "dur":7711, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459399919250, "dur":39099, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399919171, "dur":39181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399958526, "dur":2597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399961189, "dur":28647, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399961128, "dur":28710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399989883, "dur":1126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399991072, "dur":40430, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459399991011, "dur":40493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400031524, "dur":1392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400032967, "dur":149119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400032920, "dur":149168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400182146, "dur":1188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400183450, "dur":122949, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400183337, "dur":123064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400306414, "dur":1670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400308150, "dur":289426, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400308086, "dur":289492, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400597588, "dur":85, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1753459400597678, "dur":6365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400604131, "dur":279269, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400604047, "dur":279356, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400883429, "dur":10923, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400894487, "dur":84610, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400894357, "dur":84742, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400979150, "dur":2991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400982204, "dur":217175, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459400982146, "dur":217235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459401199400, "dur":1153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1753459401200557, "dur":15045, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399897153, "dur":2120, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399899274, "dur":1176, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399900450, "dur":1420, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399901870, "dur":1151, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399903022, "dur":7837, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399910862, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":3, "ts":1753459399910968, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911030, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911104, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911190, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911256, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911328, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911402, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399911474, "dur":7696, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459399919325, "dur":109048, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459399919171, "dur":109205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400028387, "dur":52, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459400028444, "dur":1334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400029855, "dur":97275, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400029791, "dur":97341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400127160, "dur":5060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400132295, "dur":59777, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400132223, "dur":59851, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400192081, "dur":25896, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459400233594, "dur":51, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1753459400217998, "dur":15664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400233928, "dur":282718, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400233667, "dur":282981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400516689, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400518267, "dur":334050, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400518203, "dur":334116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400852344, "dur":115378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400967808, "dur":161417, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459400967727, "dur":161500, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459401129254, "dur":1301, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1753459401130558, "dur":85066, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399897184, "dur":2098, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399899284, "dur":1259, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399900543, "dur":989, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399901532, "dur":1137, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399902670, "dur":8172, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399910880, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399910961, "dur":1108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1753459399912173, "dur":7064, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1753459399919305, "dur":66709, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459399919238, "dur":66779, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459399986039, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459399987552, "dur":57373, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459399987499, "dur":57428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400044949, "dur":15418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400060535, "dur":106321, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400060372, "dur":106487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400166887, "dur":1378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400168324, "dur":85947, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400168269, "dur":86004, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400254296, "dur":1365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400255762, "dur":84446, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400255665, "dur":84546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400340241, "dur":1369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400341672, "dur":204506, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Configuration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400341615, "dur":204565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400546207, "dur":4594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400550876, "dur":271570, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Drawing.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400550810, "dur":271638, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400822475, "dur":2566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400825162, "dur":174332, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400825059, "dur":174438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459400999525, "dur":1526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1753459401001055, "dur":214540, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399897203, "dur":2083, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399899288, "dur":1157, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399900445, "dur":1242, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399901687, "dur":990, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399902678, "dur":8201, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399910881, "dur":305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1753459399911186, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399911317, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1753459399911532, "dur":7651, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459399919265, "dur":155203, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CommandStateObserverModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459399919185, "dur":155285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CommandStateObserverModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400074496, "dur":2188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CommandStateObserverModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400076758, "dur":49626, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400076688, "dur":49698, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400126405, "dur":1868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400128338, "dur":152875, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400128276, "dur":152939, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400281243, "dur":1402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400282719, "dur":59100, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400282663, "dur":59157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400341834, "dur":2087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400343993, "dur":55808, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400343925, "dur":55878, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400399830, "dur":4423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400404359, "dur":79783, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400404258, "dur":79886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400484151, "dur":1069, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1753459400485225, "dur":1368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400486705, "dur":235161, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400486595, "dur":235273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400721898, "dur":2278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400724236, "dur":384389, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459400724180, "dur":384448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459401108679, "dur":2469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":5, "ts":1753459401111151, "dur":104473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399897226, "dur":2065, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399899293, "dur":1102, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399900395, "dur":1158, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399901553, "dur":1010, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399902564, "dur":853, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399903418, "dur":7427, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399910854, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399910958, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399911026, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1753459399911090, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399911235, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle.exe" }}
-,{ "pid":12345, "tid":6, "ts":1753459399911345, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399911412, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399911493, "dur":7714, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1753459399919281, "dur":62651, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459399919210, "dur":62724, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459399981950, "dur":8727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459399990754, "dur":29165, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459399990681, "dur":29239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400019935, "dur":1948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400021950, "dur":31428, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400021885, "dur":31495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400053391, "dur":1306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400054752, "dur":56215, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400054699, "dur":56270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400110997, "dur":2061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400113122, "dur":41125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400113062, "dur":41188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400154284, "dur":2218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400156565, "dur":110561, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400156507, "dur":110622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400267154, "dur":1453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400268683, "dur":117169, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400268626, "dur":117228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400385869, "dur":2041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400387969, "dur":109320, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400387914, "dur":109377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400497311, "dur":1121, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400498493, "dur":224437, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400498434, "dur":224497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400722947, "dur":12731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400735737, "dur":400637, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Mono.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459400735683, "dur":400693, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459401136395, "dur":1139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1753459401137537, "dur":78084, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399897255, "dur":2040, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399899297, "dur":1161, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399900458, "dur":1035, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399901493, "dur":1138, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399902632, "dur":8252, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399910886, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1753459399910983, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399911105, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1753459399911173, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399911270, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/D3D12/D3D12Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459399911352, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399911410, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399911497, "dur":7691, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459399919276, "dur":61544, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459399919191, "dur":61633, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459399980853, "dur":5533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459399986457, "dur":66806, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459399986395, "dur":66871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400053311, "dur":23379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400076760, "dur":37015, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400076692, "dur":37085, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400113794, "dur":1163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400115027, "dur":189609, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400114959, "dur":189679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400304652, "dur":1705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400306479, "dur":77348, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400306360, "dur":77470, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400383862, "dur":1721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400385655, "dur":100026, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.HierarchyCoreModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400385588, "dur":100095, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400485695, "dur":5855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400491618, "dur":282430, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400491556, "dur":282494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400775543, "dur":2748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400778353, "dur":68576, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400778296, "dur":68636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400846945, "dur":57, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459400847007, "dur":1604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400848758, "dur":205857, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputForUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459400848615, "dur":206003, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputForUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459401054631, "dur":62, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1753459401054699, "dur":4312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputForUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1753459401059016, "dur":156573, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399897284, "dur":2014, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399899300, "dur":1139, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399900439, "dur":1303, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399901742, "dur":1167, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399902910, "dur":7959, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399910872, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1753459399910955, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399911061, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1753459399911127, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399911226, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459399911301, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399911388, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399911448, "dur":7787, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459399919304, "dur":71175, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.MarshallingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459399919236, "dur":71245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.MarshallingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459399990510, "dur":1478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.MarshallingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459399992049, "dur":48500, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459399991990, "dur":48562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400040608, "dur":147, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459400040760, "dur":1447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400045332, "dur":131975, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400042219, "dur":135090, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400177321, "dur":63, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459400177390, "dur":1356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400178827, "dur":141982, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400178749, "dur":142061, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400320842, "dur":2064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400322962, "dur":164384, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400322909, "dur":164438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400487377, "dur":4854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400492295, "dur":217272, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400492233, "dur":217336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400709581, "dur":54, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1753459400709641, "dur":14887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400724580, "dur":337239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459400724530, "dur":337291, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459401061842, "dur":2421, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":8, "ts":1753459401064267, "dur":151351, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399897305, "dur":1997, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399899304, "dur":1205, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399900509, "dur":1120, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399901629, "dur":1322, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399902951, "dur":7913, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399910866, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1753459399911010, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399911179, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":9, "ts":1753459399911369, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399911491, "dur":7735, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459399919288, "dur":68241, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459399919228, "dur":68321, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459399987564, "dur":4490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459399992109, "dur":130808, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459399992056, "dur":130863, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400122932, "dur":66, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459400123004, "dur":3270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400126360, "dur":51670, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400126280, "dur":51751, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400178046, "dur":2455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400180578, "dur":136470, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400180503, "dur":136548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400317914, "dur":2098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400320081, "dur":195435, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400320016, "dur":195502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400517053, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1753459400515546, "dur":1570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400517178, "dur":516415, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459400517120, "dur":516475, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459401033626, "dur":10835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":9, "ts":1753459401044465, "dur":171126, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399897334, "dur":1972, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399899308, "dur":1123, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399900431, "dur":1257, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399901688, "dur":1072, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399902760, "dur":8115, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399910877, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":10, "ts":1753459399910979, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399911071, "dur":203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":10, "ts":1753459399911274, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399911357, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399911445, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399911514, "dur":7678, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459399919296, "dur":32957, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.MultiplayerModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459399919194, "dur":33061, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459399953187, "dur":3737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459399956995, "dur":47351, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459399956929, "dur":47420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400004375, "dur":1701, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400006149, "dur":136199, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400006080, "dur":136271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400142381, "dur":14124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400156582, "dur":34035, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400156508, "dur":34112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400192125, "dur":25868, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1753459400190648, "dur":27363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400218133, "dur":157235, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400218016, "dur":157354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400375395, "dur":3008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400378463, "dur":172631, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400378407, "dur":172690, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400551114, "dur":3895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400555095, "dur":1228, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400555014, "dur":1310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400556342, "dur":1271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400557674, "dur":121651, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Numerics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400557616, "dur":121712, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400679354, "dur":1697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400681129, "dur":429493, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\mscorlib.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459400681056, "dur":429568, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459401110638, "dur":2486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":10, "ts":1753459401113126, "dur":102500, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399897351, "dur":1960, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399899313, "dur":1132, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399900446, "dur":1126, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399901573, "dur":998, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399902571, "dur":654, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399903225, "dur":7689, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399910915, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":11, "ts":1753459399910991, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399911159, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":11, "ts":1753459399911220, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399911313, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459399911381, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399911436, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399911517, "dur":7667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1753459399919263, "dur":142138, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459399919186, "dur":142217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400061419, "dur":1243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400062719, "dur":65692, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400062665, "dur":65748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400128450, "dur":1203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400129723, "dur":88807, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400129657, "dur":88875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400218546, "dur":7486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400226091, "dur":138153, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Transactions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400226036, "dur":138210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400364275, "dur":1498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400365835, "dur":71248, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400365779, "dur":71306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400437112, "dur":2795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400439972, "dur":167683, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400439911, "dur":167747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400607681, "dur":2333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400610077, "dur":150503, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400610018, "dur":150564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400760611, "dur":11994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400772680, "dur":213965, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400772611, "dur":214035, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400986671, "dur":1385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400988113, "dur":169406, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459400988059, "dur":169462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459401157539, "dur":1300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":11, "ts":1753459401158842, "dur":56777, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399897376, "dur":1940, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399899316, "dur":1113, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399900429, "dur":1633, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399902062, "dur":1079, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399903141, "dur":7709, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399910852, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":12, "ts":1753459399910956, "dur":234, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399911196, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459399911288, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399911358, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399911479, "dur":7684, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459399919247, "dur":100298, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GraphToolsFoundationModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459399919169, "dur":100378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GraphToolsFoundationModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400019561, "dur":1801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GraphToolsFoundationModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400021421, "dur":72247, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400021364, "dur":72306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400093698, "dur":1675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400095446, "dur":115422, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400095377, "dur":115493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400210883, "dur":7656, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459400218542, "dur":3682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400222293, "dur":82030, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400222228, "dur":82097, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400304350, "dur":2818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400307224, "dur":84744, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400307170, "dur":104138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400411342, "dur":1607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400413055, "dur":82556, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400412953, "dur":82661, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400495637, "dur":1476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400497183, "dur":112595, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400497117, "dur":112662, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400609818, "dur":61865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400671763, "dur":285632, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400671688, "dur":285710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400957410, "dur":139, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459400959809, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1753459400957554, "dur":2343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400960271, "dur":253254, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459400959909, "dur":253618, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1753459401213558, "dur":1960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1753459401221200, "dur":1311, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1755066758862832, "dur":29218, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066758892058, "dur":113, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066758892203, "dur":287, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066758892508, "dur":2468, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066758894977, "dur":845899, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066759740877, "dur":211, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066759741197, "dur":1576, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1755066758892695, "dur":2285, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066758894983, "dur":10708, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066758905747, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066758905803, "dur":1071, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker C:/GameDevStuff/TicTacTurtle/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
+,{ "pid":12345, "tid":1, "ts":1755066758906874, "dur":2941, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066758913533, "dur":50487, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066758913479, "dur":50543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066758964024, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066758964254, "dur":57713, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066758964196, "dur":57773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759021970, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759022129, "dur":29433, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759022071, "dur":29493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759051565, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759051822, "dur":150257, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759051761, "dur":150321, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759202084, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759202416, "dur":66094, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759202265, "dur":66248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759268515, "dur":451, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759269046, "dur":41919, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759268979, "dur":41987, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759310967, "dur":397, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759311429, "dur":137974, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759311371, "dur":138033, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759449405, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759449562, "dur":131698, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\FishNet.Demos.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759449505, "dur":131757, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/FishNet.Demos.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759581289, "dur":1572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/FishNet.Demos.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759583401, "dur":74706, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759582864, "dur":75245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1755066759658111, "dur":398, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1755066759658520, "dur":82381, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758892721, "dur":2268, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758894991, "dur":1170, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758896162, "dur":974, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758897136, "dur":998, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758898135, "dur":808, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758898944, "dur":6762, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758905708, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1755066758905798, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758905885, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1755066758905984, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758906180, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758906235, "dur":7245, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758913572, "dur":30721, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066758913483, "dur":30812, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066758944296, "dur":660, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758945034, "dur":27676, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066758944965, "dur":27747, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066758972713, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066758972909, "dur":33505, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066758972849, "dur":33567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759006417, "dur":288, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759006777, "dur":81162, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759006716, "dur":81226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759087943, "dur":1187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759089204, "dur":45415, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759089139, "dur":45482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759134621, "dur":365, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759135051, "dur":45645, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759134994, "dur":45705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759180700, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759180905, "dur":50834, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759180848, "dur":50892, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759231742, "dur":405, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759232222, "dur":66911, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759232157, "dur":66979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759299138, "dur":242, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759299534, "dur":52847, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759299398, "dur":52985, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759352384, "dur":399, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759352852, "dur":95453, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759352792, "dur":95515, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759448309, "dur":436, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759448825, "dur":193824, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759448760, "dur":193891, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1755066759642653, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1755066759642786, "dur":98111, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758892715, "dur":2270, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758894987, "dur":1243, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758896230, "dur":1016, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758897246, "dur":1162, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758898409, "dur":7288, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758905703, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758905775, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758905831, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1755066758905896, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758905971, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle.exe" }}
+,{ "pid":12345, "tid":3, "ts":1755066758906085, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758906189, "dur":7295, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758913564, "dur":80962, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CommandStateObserverModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066758913484, "dur":81044, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CommandStateObserverModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066758994529, "dur":401, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066758995000, "dur":98132, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066758994939, "dur":98195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759093135, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759093311, "dur":73083, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759093254, "dur":73142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759166397, "dur":151, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759166620, "dur":25985, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759166562, "dur":26044, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759192607, "dur":375, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759193100, "dur":97804, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759193031, "dur":97875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759290907, "dur":275, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759291345, "dur":209123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759291188, "dur":209281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759500470, "dur":4195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759504746, "dur":37319, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759504677, "dur":37391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759542069, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759542259, "dur":60531, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759542201, "dur":60591, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1755066759602794, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1755066759602959, "dur":137918, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758892744, "dur":2250, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758894996, "dur":1242, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758896239, "dur":1021, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758897260, "dur":972, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758898232, "dur":230, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758898462, "dur":7241, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758905704, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1755066758905775, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758905841, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1755066758905909, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758905963, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066758906045, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758906163, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758906217, "dur":7277, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758913567, "dur":59088, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066758913495, "dur":59162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066758972659, "dur":259, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066758973005, "dur":33960, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066758972924, "dur":34042, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759006967, "dur":274, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066759007313, "dur":62473, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759007248, "dur":62540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759071645, "dur":3115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759074820, "dur":144601, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759074763, "dur":144660, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759219424, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066759219661, "dur":34616, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759219557, "dur":34721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759254279, "dur":349, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066759254698, "dur":93013, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759254635, "dur":93079, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759347715, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066759347895, "dur":114050, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759347837, "dur":114110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759461948, "dur":403, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066759462431, "dur":258604, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759462366, "dur":258671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1755066759721038, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1755066759721129, "dur":19753, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758892764, "dur":2234, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758895000, "dur":1260, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758896261, "dur":995, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758897256, "dur":1129, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758898386, "dur":7315, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758905702, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1755066758905800, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758905858, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1755066758905927, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758905987, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/D3D12/D3D12Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066758906271, "dur":7219, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758913578, "dur":34474, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066758913490, "dur":34563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066758948054, "dur":373, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758948497, "dur":46345, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066758948435, "dur":46408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066758994844, "dur":307, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066758995268, "dur":102895, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066758995156, "dur":103008, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759098165, "dur":408, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066759098642, "dur":33483, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759098580, "dur":33547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759132129, "dur":330, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066759132459, "dur":50, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759132592, "dur":76047, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759132513, "dur":76128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759208643, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066759208931, "dur":112603, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\GameKit.Dependencies.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759208845, "dur":112690, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/GameKit.Dependencies.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759321551, "dur":1294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/GameKit.Dependencies.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759322915, "dur":54512, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759322847, "dur":54582, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759377449, "dur":1172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759378686, "dur":210364, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759378624, "dur":210429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759589054, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1755066759589315, "dur":151438, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759589245, "dur":151510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1755066759740755, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758892782, "dur":2220, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758895004, "dur":1225, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758896229, "dur":1009, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758897238, "dur":1128, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758898366, "dur":7330, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758905735, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758905826, "dur":743, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1755066758906661, "dur":6832, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758913587, "dur":59282, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066758913494, "dur":59377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066758972872, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066758973146, "dur":98800, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066758973090, "dur":98858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759071961, "dur":3036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759075052, "dur":45225, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759074999, "dur":45280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759120280, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066759120371, "dur":53, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759120493, "dur":39803, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759120426, "dur":39872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759160300, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066759160699, "dur":82757, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759160436, "dur":83022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759243460, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066759243762, "dur":47291, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759243614, "dur":47441, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759291056, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066759291231, "dur":130576, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759291168, "dur":130641, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759421810, "dur":354, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066759422232, "dur":247991, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759422172, "dur":248053, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1755066759670227, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1755066759670331, "dur":70558, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758892812, "dur":2194, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758895008, "dur":1226, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758896235, "dur":1059, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758897294, "dur":1146, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758898440, "dur":7260, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758905702, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1755066758905819, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1755066758905878, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758905934, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066758906001, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758906071, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758906220, "dur":7262, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758913554, "dur":32455, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066758913483, "dur":32528, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066758946012, "dur":465, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758946551, "dur":27659, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066758946485, "dur":27727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066758974213, "dur":2049, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066758976346, "dur":112107, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066758976274, "dur":112181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759088479, "dur":1615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759090146, "dur":95557, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759090096, "dur":95609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759185706, "dur":302, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066759186084, "dur":68110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759186019, "dur":68177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759254197, "dur":337, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066759254609, "dur":64990, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759254546, "dur":65054, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759319602, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066759319826, "dur":100744, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759319765, "dur":100807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759420600, "dur":1475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759422169, "dur":277779, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759422078, "dur":277873, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1755066759699952, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1755066759700081, "dur":40805, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758892827, "dur":2183, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758895012, "dur":1208, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758896221, "dur":990, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758897211, "dur":992, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758898204, "dur":743, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758898947, "dur":6784, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758905732, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1755066758905813, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758905887, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1755066758905953, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758906012, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066758906288, "dur":7200, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758913603, "dur":30340, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066758913492, "dur":30454, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066758943948, "dur":999, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758945027, "dur":37452, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066758944962, "dur":37519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066758982482, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066758982654, "dur":68523, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066758982593, "dur":68586, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759051181, "dur":319, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759051578, "dur":38094, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759051513, "dur":38160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759089674, "dur":640, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759090381, "dur":29449, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759090319, "dur":29514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759119835, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759120785, "dur":89791, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759120013, "dur":90565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759210579, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759210810, "dur":166301, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759210698, "dur":166415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759377115, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759377280, "dur":127759, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759377225, "dur":127815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759505041, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759505268, "dur":87244, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759505208, "dur":87471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759592680, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759592939, "dur":118474, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759592883, "dur":118532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1755066759711417, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1755066759711557, "dur":29327, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758892844, "dur":2170, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758895016, "dur":1169, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758896185, "dur":1051, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758897236, "dur":1005, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758898241, "dur":7458, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758905700, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1755066758905889, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758905973, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":9, "ts":1755066758906042, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758906201, "dur":7291, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758913594, "dur":63921, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066758913493, "dur":64024, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066758977518, "dur":3416, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066758981019, "dur":26208, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066758980947, "dur":26281, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759007229, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759007388, "dur":31495, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759007334, "dur":31551, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759038887, "dur":260, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759039218, "dur":95917, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759039155, "dur":95981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759135137, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759135288, "dur":85716, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759135235, "dur":85770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759221006, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759221225, "dur":91639, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759221106, "dur":91759, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759312866, "dur":364, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759313302, "dur":170724, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759313238, "dur":170790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759484056, "dur":4706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759488823, "dur":31929, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759488766, "dur":31989, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759520756, "dur":359, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759521194, "dur":108102, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759521128, "dur":108170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1755066759629299, "dur":304, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1755066759629616, "dur":111257, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758892862, "dur":2157, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758895021, "dur":1272, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758896293, "dur":1031, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758897324, "dur":1163, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758898487, "dur":7222, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758905710, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1755066758905838, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758905895, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1755066758905973, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758906228, "dur":7251, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066758913590, "dur":93889, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GraphToolsFoundationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066758913482, "dur":93999, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GraphToolsFoundationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759007482, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759007640, "dur":90092, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759007577, "dur":90156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759097735, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759097911, "dur":69618, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759097849, "dur":69681, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759167531, "dur":268, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759167865, "dur":24736, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759167807, "dur":24796, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759192604, "dur":374, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759193106, "dur":24390, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\FishNet.CodeAnalysis.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759193027, "dur":24471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/FishNet.CodeAnalysis.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759217525, "dur":1138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/FishNet.CodeAnalysis.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759218728, "dur":29601, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759218666, "dur":29664, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759248331, "dur":285, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759248730, "dur":72662, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759248650, "dur":72744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759321394, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759321567, "dur":284669, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759321512, "dur":284725, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":10, "ts":1755066759606239, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1755066759606396, "dur":134478, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758892879, "dur":2144, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758895025, "dur":1213, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758896239, "dur":1011, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758897251, "dur":994, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758898246, "dur":7452, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758905699, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":11, "ts":1755066758905806, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758905875, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1755066758905951, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758906022, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758906184, "dur":7301, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066758913576, "dur":116234, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066758913485, "dur":116327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759029813, "dur":3678, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759033574, "dur":29332, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759033506, "dur":29402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759062910, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759063135, "dur":40707, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759063076, "dur":40768, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759103845, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759104081, "dur":28836, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759104017, "dur":28902, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759132919, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759133148, "dur":143409, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759133016, "dur":143543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759276561, "dur":420, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759277057, "dur":32897, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759276993, "dur":32963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759309958, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759310176, "dur":68919, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759310114, "dur":68983, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759379098, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759379243, "dur":113916, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\FishNet.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759379192, "dur":113969, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/FishNet.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759493182, "dur":1460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/FishNet.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759494707, "dur":26977, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759494646, "dur":27039, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759521686, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759521867, "dur":31500, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759521788, "dur":31581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759553370, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759553582, "dur":158491, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759553524, "dur":158551, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1755066759712076, "dur":267, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1755066759712348, "dur":28532, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758892902, "dur":2126, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758895028, "dur":1297, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758896326, "dur":1099, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758897425, "dur":1147, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758898572, "dur":7135, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758905708, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1755066758905776, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758905872, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1755066758905950, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758906014, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":12, "ts":1755066758906134, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758906187, "dur":7299, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758913601, "dur":50816, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066758913486, "dur":50933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066758964420, "dur":249, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758964742, "dur":28708, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066758964676, "dur":28776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066758993454, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066758993698, "dur":28144, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066758993635, "dur":28209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759021846, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066759022073, "dur":53217, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759022012, "dur":53280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759075293, "dur":343, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066759075702, "dur":28142, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759075641, "dur":28204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759103846, "dur":628, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066759104546, "dur":121456, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759104481, "dur":121523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759226005, "dur":425, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066759226509, "dur":85016, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759226441, "dur":85085, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759311526, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1755066759311696, "dur":279949, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759311621, "dur":280026, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759591672, "dur":1389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/GameDevStuff/TicTacTurtle_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1755066759593062, "dur":147817, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1755066759745707, "dur":1067, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
