@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Button
     - Cards
+    - GlobalVariables
     FishNet.Demos.dll:
     - FishNet.Demo.AdditiveScenes.Player
     - FishNet.Demo.Benchmarks.NetworkTransforms.MoveRandomlyNonPhysics
@@ -155,6 +156,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 32782}
     - Class: 114
       Script: {instanceID: 32868}
+    - Class: 114
+      Script: {instanceID: 38882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1689,7 +1692,7 @@ ScriptsOnlyBuild:
     className: UnityOnBecameInvisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 660eafa92f33745deb3c7218a82d4e45
+      Hash: 1f2324443103666035238d6e5fc44939
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cards
@@ -1711,6 +1714,12 @@ ScriptsOnlyBuild:
     assemblyName: FishNet.Runtime
     namespaceName: FishNet.Managing.Predicting.Editing
     className: PredictionManagerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 1821a9ea0f63dcd39172a81d7d5e3487
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GlobalVariables
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

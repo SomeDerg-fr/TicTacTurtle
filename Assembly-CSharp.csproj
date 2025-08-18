@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FishNet\Upgrading\UpgradeFromMirrorMenu.cs" />
+    <Compile Include="Assets\Scripts\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\FishNet\Upgrading\EdgegapMenu.cs" />
     <Compile Include="Assets\Scripts\Cards.cs" />

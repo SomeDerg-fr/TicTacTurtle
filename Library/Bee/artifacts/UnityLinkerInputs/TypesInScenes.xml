@@ -2,6 +2,7 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="Button" preserve="nothing"/>
 		<type fullname="Cards" preserve="nothing"/>
+		<type fullname="GlobalVariables" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="FishNet.Demos">
 		<type fullname="FishNet.Demo.AdditiveScenes.Player" preserve="nothing"/>

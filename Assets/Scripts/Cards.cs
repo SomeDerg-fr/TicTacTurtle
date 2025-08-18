@@ -18,6 +18,7 @@ using FishNet.Example.ColliderRollbacks;
 using FishNet.Example.Scened;
 using FishNet.Object.Synchronizing;
 using FishNet.Object.Synchronizing.Internal;
+using NUnit.Framework;
 
 public class Cards : NetworkBehaviour
 {
@@ -25,8 +26,12 @@ public class Cards : NetworkBehaviour
     public GameObject[] boardObj = new GameObject[9];
     public bool isPlacing = false;
     public bool isChoosing = false;
-    private int playerNumber;
+    private bool player1;
     public int players = 0;
+    public float[] cardx; // = new float[] { -0.727f, 1.06f, 2.847f, 4.634f }
+    public float cardz; //-4.71751f
+    public float baseCardRot; //-4.71751
+    public float cardZHover; //-0.41751f
     System.Random rnd = new System.Random();
 
     int UILayer;
@@ -84,36 +89,35 @@ public class Cards : NetworkBehaviour
     Card[] oppDeck;
     Card[] handCards = new Card[3];
     GameObject[] handObjects = new GameObject[3];
-    float[] cardx = new float[] { -0.727f, 1.06f, 2.847f, 4.634f };
     String phase = "action";
     private Camera playerCamera;
 
     public override void OnStartClient()
     {
         base.OnStartClient();
-        if (base.IsOwner)
+        if (!base.IsOwner)
         {
+            return;
         }
-        else
+        GlobalVariables playerScript = GameObject.Find("Globals").GetComponent<GlobalVariables>();
+        players = playerScript.players.Value;
+        if (players == 1)
         {
-            players += 1;
-            playerNumber = players;
-            if (playerNumber == 1)
-            {
-                playerCamera = GameObject.Find("P1_Camera").GetComponent<Camera>();
-                Debug.Log(playerCamera.name + " Camera");
-                GameObject P2_Camera = GameObject.Find("P2_Camera");
-                P2_Camera.SetActive(false);
-            }
-            else if (playerNumber == 2)
-            {
-                GetComponent<Cards>().enabled = false;
-                playerCamera = GameObject.Find("P2_Camera").GetComponent<Camera>();
-                Debug.Log(playerCamera.name + " Camera");
-                GameObject P1_Camera = GameObject.Find("P1_Camera");
-                P1_Camera.SetActive(false);
-            }
+            playerCamera = GameObject.Find("P1_Camera").GetComponent<Camera>();
+            Debug.Log(playerCamera.name + " Camera");
+            GameObject P2_Camera = GameObject.Find("P2_Camera");
+            P2_Camera.SetActive(false);
         }
+        else if (players == 2)
+        {
+            //GetComponent<Cards>().enabled = false;
+            playerCamera = GameObject.Find("P2_Camera").GetComponent<Camera>();
+            Debug.Log(playerCamera.name + " Camera");
+            GameObject P1_Camera = GameObject.Find("P1_Camera");
+            P1_Camera.SetActive(false);
+        }
+        Debug.Log(players);
+        playerScript.AddPlayer(playerScript, 1);
     }
     void Start()
     {
@@ -152,18 +156,18 @@ public class Cards : NetworkBehaviour
             }
         }
 
-        handObjects[0] = Instantiate(Turtles[handCards[0].getPassiveID()], new Vector3(cardx[0], 0.9855669f, -4.71751f), Quaternion.identity);
-        handObjects[0].transform.Rotate(-24.838f, 0, 0);
+        handObjects[0] = Instantiate(Turtles[handCards[0].getPassiveID()], new Vector3(cardx[0], 0.9855669f, cardz), Quaternion.identity);
+        handObjects[0].transform.Rotate(0,baseCardRot,0);
         handObjects[0].layer = LayerMask.NameToLayer("Hand");
         ServerManager.Spawn(handObjects[0]);
 
-        handObjects[1] = Instantiate(Turtles[handCards[1].getPassiveID()], new Vector3(cardx[1], 0.9855669f, -4.71751f), Quaternion.identity);
-        handObjects[1].transform.Rotate(-24.838f, 0, 0);
+        handObjects[1] = Instantiate(Turtles[handCards[1].getPassiveID()], new Vector3(cardx[1], 0.9855669f, cardz), Quaternion.identity);
+        handObjects[1].transform.Rotate(0,baseCardRot,0);
         handObjects[1].layer = LayerMask.NameToLayer("Hand");
         ServerManager.Spawn(handObjects[1]);
 
-        handObjects[2] = Instantiate(Turtles[handCards[2].getPassiveID()], new Vector3(cardx[2], 0.9855669f, -4.71751f), Quaternion.identity);
-        handObjects[2].transform.Rotate(-24.838f, 0, 0);
+        handObjects[2] = Instantiate(Turtles[handCards[2].getPassiveID()], new Vector3(cardx[2], 0.9855669f, cardz), Quaternion.identity);
+        handObjects[2].transform.Rotate(0,baseCardRot,0);
         handObjects[2].layer = LayerMask.NameToLayer("Hand");
         ServerManager.Spawn(handObjects[2]);
         
@@ -210,6 +214,10 @@ public class Cards : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!base.IsOwner)
+        {
+            return;
+        }
         Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit raycastHit;
         if (!effectActive && !isChoosing)
@@ -232,12 +240,12 @@ public class Cards : NetworkBehaviour
                                 }
                                 else
                                 {
-                                    handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, -4.3f);
+                                    handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, -4.71751f + cardZHover); //-0.41751
                                 }
                             }
                             else
                             {
-                                handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 0.9855669f, -4.71751f);
+                                handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 0.9855669f, cardz);
                             }
                         }
                     }
@@ -248,7 +256,7 @@ public class Cards : NetworkBehaviour
                     {
                         if (i != null)
                         {
-                            i.transform.position = new Vector3(i.transform.position.x, 0.9855669f, -4.71751f);
+                            i.transform.position = new Vector3(i.transform.position.x, 0.9855669f, cardz);
                         }
                     }
                 }
@@ -350,8 +358,8 @@ public class Cards : NetworkBehaviour
                         if (handCards[i] == null)
                         {
                             handCards[i] = drawnCard;
-                            handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, -4.71751f), Quaternion.identity);
-                            handObjects[i].transform.Rotate(-24.838f, 0, 0);
+                            handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), Quaternion.identity);
+                            handObjects[i].transform.Rotate(0,baseCardRot,0);
                             handObjects[i].layer = LayerMask.NameToLayer("Hand");
                             ServerManager.Spawn(handObjects[i]);
                             break;
@@ -366,56 +374,6 @@ public class Cards : NetworkBehaviour
 
             if (phase == "opponent")
             {
-                if (oppDeck.Length != 0)
-                {
-                    Card drawnCard = null;
-                    int randDraw = rnd.Next(0, oppDeck.Length);
-                    drawnCard = oppDeck[randDraw];
-                    oppDeck[randDraw] = null;
-                    for (int i = 0; i < oppDeck.Length; i++)
-                    {
-                        if (oppDeck[i] == null)
-                        {
-                            oppDeck[i] = oppDeck[oppDeck.Length - 1];
-                            Array.Resize(ref oppDeck, oppDeck.Length - 1);
-                            break;
-                        }
-                    }
-                    for (int i = 0; i < 8; i++)
-                    {
-                        if (board[i] == null && drawnCard.getplacement().Contains(i + 1))
-                        {
-                            board[i] = drawnCard;
-                            float cardX = 0.587f;
-                            float cardZ = -1.689f;
-                            if (i == 0 || i == 3 || i == 6)
-                            {
-                                cardX = -1.194f;
-                            }
-                            if (i == 2 || i == 5 || i == 8)
-                            {
-                                cardX = 2.377f;
-                            }
-                            if (i == 0 || i == 1 || i == 2)
-                            {
-                                cardZ = 1.118f;
-                            }
-                            if (i == 6 || i == 7 || i == 8)
-                            {
-                                cardZ = -4.502f;
-                            }
-                            GameObject cardPrefab = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardX, 0, cardZ), Quaternion.identity);
-                            cardPrefab.GetComponent<Rigidbody>().useGravity = true;
-                            cardPrefab.GetComponent<Rigidbody>().isKinematic = false;
-                            cardPrefab.layer = LayerMask.NameToLayer("Board");
-                            cardPrefab.transform.Rotate(0, 180f, 0);
-                            cardPrefab.transform.position = new Vector3(cardX, 0, cardZ);
-                            boardObj[i] = cardPrefab;
-                            ServerManager.Spawn(cardPrefab);
-                            break;
-                        }
-                    }
-                }
                 phase = "action";
             }
         }

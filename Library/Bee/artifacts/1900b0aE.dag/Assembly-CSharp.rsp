@@ -397,6 +397,7 @@
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
 "Assets/Scripts/Button.cs"
 "Assets/Scripts/Cards.cs"
+"Assets/Scripts/GlobalVariables.cs"
 -langversion:9.0
 
 /deterministic
