@@ -11,6 +11,7 @@ public class GlobalVariables : NetworkBehaviour
     public void AddPlayer(GlobalVariables script, int amount)
     {
         script.players.Value += amount;
+        Debug.Log("peanits");
     }
 
     // Start is called before the first frame update

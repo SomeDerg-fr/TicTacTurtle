@@ -109,55 +109,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 26408}
     - Class: 114
-      Script: {instanceID: 27214}
+      Script: {instanceID: 26490}
     - Class: 114
-      Script: {instanceID: 27746}
+      Script: {instanceID: 27218}
     - Class: 114
-      Script: {instanceID: 27772}
+      Script: {instanceID: 27750}
     - Class: 114
-      Script: {instanceID: 28198}
+      Script: {instanceID: 27776}
     - Class: 114
-      Script: {instanceID: 28244}
+      Script: {instanceID: 28202}
     - Class: 114
-      Script: {instanceID: 28264}
+      Script: {instanceID: 28248}
     - Class: 114
-      Script: {instanceID: 28302}
+      Script: {instanceID: 28268}
     - Class: 114
-      Script: {instanceID: 28732}
+      Script: {instanceID: 28306}
     - Class: 114
-      Script: {instanceID: 29842}
+      Script: {instanceID: 28736}
     - Class: 114
-      Script: {instanceID: 29858}
+      Script: {instanceID: 29846}
     - Class: 114
       Script: {instanceID: 29862}
     - Class: 114
-      Script: {instanceID: 30354}
+      Script: {instanceID: 29866}
     - Class: 114
-      Script: {instanceID: 30482}
+      Script: {instanceID: 30358}
     - Class: 114
-      Script: {instanceID: 30600}
+      Script: {instanceID: 30486}
     - Class: 114
-      Script: {instanceID: 30696}
+      Script: {instanceID: 30604}
     - Class: 114
-      Script: {instanceID: 30714}
+      Script: {instanceID: 30700}
     - Class: 114
-      Script: {instanceID: 30736}
+      Script: {instanceID: 30718}
     - Class: 114
-      Script: {instanceID: 30774}
+      Script: {instanceID: 30740}
     - Class: 114
-      Script: {instanceID: 31532}
+      Script: {instanceID: 30778}
     - Class: 114
-      Script: {instanceID: 31888}
+      Script: {instanceID: 31536}
     - Class: 114
-      Script: {instanceID: 31944}
+      Script: {instanceID: 31892}
     - Class: 114
-      Script: {instanceID: 32472}
+      Script: {instanceID: 31948}
     - Class: 114
-      Script: {instanceID: 32782}
+      Script: {instanceID: 32476}
     - Class: 114
-      Script: {instanceID: 32868}
+      Script: {instanceID: 32786}
     - Class: 114
-      Script: {instanceID: 38882}
+      Script: {instanceID: 32872}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -212,7 +212,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 26620}
+      Script: {instanceID: 26622}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -220,12 +220,6 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 98c9cdc32649cea415149e17aa5329e2
-    assemblyName: Assembly-CSharp
-    namespaceName: FishNet.Upgrading.Mirror.Editing
-    className: UpgradeFromMirrorMenu
   - hash:
       serializedVersion: 2
       Hash: e39b696af0974c9220ead54cddf50097
@@ -420,6 +414,12 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 1821a9ea0f63dcd39172a81d7d5e3487
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GlobalVariables
+  - hash:
+      serializedVersion: 2
       Hash: db9b308769d19e1f9e161df0392c23ca
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -466,6 +466,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 98c9cdc32649cea415149e17aa5329e2
+    assemblyName: Assembly-CSharp
+    namespaceName: FishNet.Upgrading.Mirror.Editing
+    className: UpgradeFromMirrorMenu
   - hash:
       serializedVersion: 2
       Hash: 1553f209ae0b2d5d3a35685fca55f9c3
@@ -1692,7 +1698,7 @@ ScriptsOnlyBuild:
     className: UnityOnBecameInvisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1f2324443103666035238d6e5fc44939
+      Hash: ffdb56ba2a28559c959da3ebd377d48f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cards
@@ -1714,12 +1720,6 @@ ScriptsOnlyBuild:
     assemblyName: FishNet.Runtime
     namespaceName: FishNet.Managing.Predicting.Editing
     className: PredictionManagerEditor
-  - hash:
-      serializedVersion: 2
-      Hash: 1821a9ea0f63dcd39172a81d7d5e3487
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GlobalVariables
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity

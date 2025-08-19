@@ -108,7 +108,7 @@ public class Cards : NetworkBehaviour
             GameObject P2_Camera = GameObject.Find("P2_Camera");
             P2_Camera.SetActive(false);
         }
-        else if (players == 2)
+        else if (players > 1)
         {
             //GetComponent<Cards>().enabled = false;
             playerCamera = GameObject.Find("P2_Camera").GetComponent<Camera>();
@@ -116,8 +116,16 @@ public class Cards : NetworkBehaviour
             GameObject P1_Camera = GameObject.Find("P1_Camera");
             P1_Camera.SetActive(false);
         }
+        int hi = 0;
+        foreach (GameObject obj in objHighlights)
+        {
+            highlights[hi] = Instantiate(obj, obj.transform.position, Quaternion.identity);
+            hi++;
+        }
         Debug.Log(players);
         playerScript.AddPlayer(playerScript, 1);
+        players = playerScript.players.Value;
+        Debug.Log(players);
     }
     void Start()
     {
@@ -182,7 +190,8 @@ public class Cards : NetworkBehaviour
     public GameObject[] Turtles;
     GameObject cardPrefab;
 
-    public GameObject[] highlights;
+    public GameObject[] objHighlights = new GameObject[9];
+    GameObject[] highlights = new GameObject[9];
 
     public Material yes;
     public Material no;
@@ -381,7 +390,6 @@ public class Cards : NetworkBehaviour
     IEnumerator placing(Card currentCard, GameObject cardPrefab, int handIndex)
     {
         cardPrefab = Instantiate(Turtles[currentCard.getPassiveID()], new Vector3(2.706f, 0, 1.689f), Quaternion.identity);
-        ServerManager.Spawn(cardPrefab);
 
         cardPrefab.GetComponent<Rigidbody>().useGravity = false;
         float initialX = Input.mousePosition.x;
@@ -607,6 +615,8 @@ public class Cards : NetworkBehaviour
         cardPrefab.GetComponent<Rigidbody>().useGravity = true;
         cardPrefab.GetComponent<Rigidbody>().isKinematic = false;
         cardPrefab.layer = LayerMask.NameToLayer("Board");
+        ServerManager.Spawn(cardPrefab);
+        
 
         disableHighlights();
     }
