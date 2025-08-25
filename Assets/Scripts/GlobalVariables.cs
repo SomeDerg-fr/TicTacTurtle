@@ -7,11 +7,12 @@ using UnityEngine;
 public class GlobalVariables : NetworkBehaviour
 {
     public readonly SyncVar<int> players = new SyncVar<int>(1);
+    
     [ServerRpc(RequireOwnership = false)]
-    public void AddPlayer(GlobalVariables script, int amount)
+    public void SetTurn(int amount)
     {
-        script.players.Value += amount;
-        Debug.Log("peanits");
+        players.Value = amount;
+        Debug.Log("peanits "+amount);
     }
 
     // Start is called before the first frame update

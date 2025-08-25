@@ -1698,7 +1698,7 @@ ScriptsOnlyBuild:
     className: UnityOnBecameInvisibleMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ffdb56ba2a28559c959da3ebd377d48f
+      Hash: 43c8b589c2956198efabf5c0ec8cbf59
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cards
