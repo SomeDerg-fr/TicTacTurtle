@@ -95,6 +95,7 @@ public class Cards : NetworkBehaviour
     String phase = "action";
     private Camera playerCamera;
     bool connected = false;
+    int[] passiveIDs;
 
 
     private int myPlayerNumber = 0;
@@ -107,7 +108,23 @@ public class Cards : NetworkBehaviour
             return;
         }
 
-        // Prepare deck and handCards locally
+        // Request player number from server
+        RequestPlayerNumber(Owner);
+
+        // Wait for myPlayerNumber to be set before setup
+        StartCoroutine(WaitForPlayerNumber());
+    }
+
+    private IEnumerator WaitForPlayerNumber()
+    {
+        Debug.Log("Waiting for player number to be assigned...");
+        while (myPlayerNumber == 0)
+        {
+            yield return null;
+        }
+        Debug.Log("Player number assigned: " + myPlayerNumber);
+
+        // Now do your hand/card setup
         deck = new Card[Turtles.Length];
         deck[0] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
         deck[1] = new Card("Spy Turtle", new int[] { 1, 3, 5, 7, 9 }, 0, 1);
@@ -117,7 +134,6 @@ public class Cards : NetworkBehaviour
         deck[5] = new Card("Business Turtle", new int[] { 1, 2, 3, 4, 6, 7, 8, 9 }, -1, 5);
         deck[6] = new Card("Evil Turtle", new int[] { 1, 3, 5, 7, 9 }, -1, 6);
         deck[7] = new Card("War Turtle", new int[] { 1, 3, 7, 9 }, 2, 7);
-
 
         for (int i = 0; i < handCards.Length; i++)
         {
@@ -134,53 +150,28 @@ public class Cards : NetworkBehaviour
                 }
             }
         }
+        passiveIDs = handCards.Select(card => card.getPassiveID()).ToArray();
 
-        // Set up cardx, cardz, baseCardRot for this player
-        if (players.Value < 2)
+        // Set up camera and hand positions
+        if (myPlayerNumber == 1)
         {
-            // Player 1 config
+            playerCamera = GameObject.Find("P1_Camera").GetComponent<Camera>();
+            GameObject.Find("P2_Camera").SetActive(false);
+            currentPlayer = 1;
             cardx = new float[] { -0.727f, 1.06f, 2.847f, 4.634f };
             cardz = -4.71751f;
             baseCardRot = 0f;
         }
         else
         {
-            // Player 2 config
+            playerCamera = GameObject.Find("P2_Camera").GetComponent<Camera>();
+            GameObject.Find("P1_Camera").SetActive(false);
+            currentPlayer = 2;
             cardx = new float[] { 1.33f, -0.457f, -2.244f, -4.031f };
             cardz = 4.71f;
             baseCardRot = 180f;
         }
-
-        int[] passiveIDs = handCards.Select(card => card.getPassiveID()).ToArray();
-        RequestServerSetup(passiveIDs, cardx, cardz, baseCardRot, Owner);
-
-        // Wait for myPlayerNumber to be set before assigning camera and other logic
-        StartCoroutine(WaitForPlayerNumber());
-    }
-
-    private IEnumerator WaitForPlayerNumber()
-    {
-        while (myPlayerNumber == 0)
-            yield return null;
-
-        if (myPlayerNumber == 1)
-        {
-            playerCamera = GameObject.Find("P1_Camera").GetComponent<Camera>();
-            Debug.Log(playerCamera.name + " Camera");
-            GameObject P2_Camera = GameObject.Find("P2_Camera");
-            P2_Camera.SetActive(false);
-            currentPlayer = 1;
-        }
-        else
-        {
-            playerCamera = GameObject.Find("P2_Camera").GetComponent<Camera>();
-            Debug.Log(playerCamera.name + " Camera");
-            GameObject P1_Camera = GameObject.Find("P1_Camera");
-            P1_Camera.SetActive(false);
-            currentPlayer = 2;
-        }
         connected = true;
-        Debug.Log(currentPlayer);
 
         if (currentPlayer == 2)
         {
@@ -190,6 +181,11 @@ public class Cards : NetworkBehaviour
             }
         }
 
+        // Now call RequestServerSetup
+        //Debug.Log("Before requestserversetup");
+        //RequestServerSetup(passiveIDs, cardx, cardz, baseCardRot, Owner);
+        //Debug.Log("After requestserversetup");
+
         // Assign hand objects after network spawn
         StartCoroutine(AssignHandObjects());
     }
@@ -198,12 +194,18 @@ public class Cards : NetworkBehaviour
     private IEnumerator AssignHandObjects()
     {
         yield return new WaitForSeconds(0.5f); // Wait for network sync
+        Debug.Log("Before requestserversetup");
+        RequestServerSetup(passiveIDs, cardx, cardz, baseCardRot, Owner);
+        Debug.Log("After requestserversetup");
 
+        Debug.Log("tries to assign hand objects");
         var allHandObjects = GameObject.FindGameObjectsWithTag("Hand");
         for (int i = 0; i < handCards.Length; i++)
         {
             Vector3 expectedPos = new Vector3(cardx[i], 0.9855669f, cardz);
+            Debug.Log(expectedPos);
             handObjects[i] = allHandObjects.OrderBy(obj => Vector3.Distance(obj.transform.position, expectedPos)).FirstOrDefault();
+            Debug.Log(handObjects[i]);
         }
     }
 
@@ -990,34 +992,41 @@ public class Cards : NetworkBehaviour
     [ServerRpc]
     private void RequestServerSetup(int[] passiveIDs, float[] cardxConfig, float cardzConfig, float baseCardRotConfig, NetworkConnection conn)
     {
+        UnityEngine.Debug.Log("player2 gen");
         if (!connectedPlayers.Contains(conn))
             connectedPlayers.Add(conn);
-
         int assignedPlayerNumber = connectedPlayers.IndexOf(conn) + 1;
         TargetAssignPlayerNumber(conn, assignedPlayerNumber);
-        if (assignedPlayerNumber == 2)
-        {
-            baseCardRotConfig = 180f;
-            cardzConfig = 4.71f;
-            cardxConfig[0] = 1.33f;
-            cardxConfig[1] = -0.457f;
-            cardxConfig[2] = -2.244f;
-            cardxConfig[3] = -4.031f;
-        }
         for (int i = 0; i < passiveIDs.Length; i++)
-            {
-                GameObject obj = Instantiate(Turtles[passiveIDs[i]], new Vector3(cardxConfig[i], 0.9855669f, cardzConfig), Quaternion.identity);
-                obj.transform.Rotate(0, baseCardRotConfig, 0);
-                obj.layer = LayerMask.NameToLayer("Hand");
-                obj.tag = "Hand";
-                InstanceFinder.ServerManager.Spawn(obj);
-                Debug.Log($"Spawned hand object for index {i} for player {assignedPlayerNumber}");
-            }
+        {
+            GameObject obj = Instantiate(Turtles[passiveIDs[i]], new Vector3(cardxConfig[i], 0.9855669f, cardzConfig), Quaternion.identity);
+            obj.transform.Rotate(0, baseCardRotConfig, 0);
+            obj.layer = LayerMask.NameToLayer("Hand");
+            obj.tag = "Hand";
+            handTag(obj);
+            InstanceFinder.ServerManager.Spawn(obj);
+            Debug.Log($"Spawned hand object for index {i} for player {assignedPlayerNumber}");
+        }
+    }
+
+    [ServerRpc]
+    private void RequestPlayerNumber(NetworkConnection conn)
+    {
+        if (!connectedPlayers.Contains(conn))
+            connectedPlayers.Add(conn);
+        int assignedPlayerNumber = connectedPlayers.IndexOf(conn) + 1;
+        TargetAssignPlayerNumber(conn, assignedPlayerNumber);
     }
 
     [TargetRpc]
     private void TargetAssignPlayerNumber(NetworkConnection conn, int number)
     {
         myPlayerNumber = number;
+    }
+
+    private void handTag(GameObject obj)
+    {
+        obj.tag = "Hand";
+        Debug.Log("assigning tag");
     }
 }
