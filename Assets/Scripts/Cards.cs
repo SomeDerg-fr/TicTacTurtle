@@ -193,13 +193,14 @@ public class Cards : NetworkBehaviour
     // Add this coroutine to assign hand objects by proximity
     private IEnumerator AssignHandObjects()
     {
-        yield return new WaitForSeconds(0.5f); // Wait for network sync
+        yield return new WaitForSeconds(0.1f); // Wait for network sync
         Debug.Log("Before requestserversetup");
         RequestServerSetup(passiveIDs, cardx, cardz, baseCardRot, Owner);
         Debug.Log("After requestserversetup");
+        yield return new WaitForSeconds(0.1f);
 
         Debug.Log("tries to assign hand objects");
-        var allHandObjects = GameObject.FindGameObjectsWithTag("Hand");
+        var allHandObjects = GameObject.FindObjectsOfType<GameObject>();
         for (int i = 0; i < handCards.Length; i++)
         {
             Vector3 expectedPos = new Vector3(cardx[i], 0.9855669f, cardz);
