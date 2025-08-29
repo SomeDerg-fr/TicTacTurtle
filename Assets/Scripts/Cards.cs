@@ -160,6 +160,7 @@ public class Cards : NetworkBehaviour
             currentPlayer = 1;
             cardx = new float[] { -0.727f, 1.06f, 2.847f, 4.634f };
             cardz = -4.71751f;
+            cardZHover = -0.41751f;
             baseCardRot = 0f;
         }
         else
@@ -169,6 +170,7 @@ public class Cards : NetworkBehaviour
             currentPlayer = 2;
             cardx = new float[] { 1.33f, -0.457f, -2.244f, -4.031f };
             cardz = 4.71f;
+            cardZHover = 0.41751f;
             baseCardRot = 180f;
         }
         connected = true;
@@ -298,7 +300,7 @@ public class Cards : NetworkBehaviour
                                 }
                                 else
                                 {
-                                    handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, -4.71751f + cardZHover); //-0.41751
+                                    handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, cardz - cardZHover); //-0.41751
                                 }
                             }
                             else
@@ -428,7 +430,7 @@ public class Cards : NetworkBehaviour
                             handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), Quaternion.identity);
                             handObjects[i].transform.Rotate(0, baseCardRot, 0);
                             handObjects[i].layer = LayerMask.NameToLayer("Hand");
-                            ServerManager.Spawn(handObjects[i]);
+                            spawnObject(Owner, handObjects[i]);
                             break;
                         }
                     }
@@ -934,12 +936,12 @@ public class Cards : NetworkBehaviour
                             }
                             else
                             {
-                                handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, -4.3f);
+                                handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 1.18f, cardz-cardZHover);
                             }
                         }
                         else
                         {
-                            handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 0.9855669f, -4.71751f);
+                            handObjects[i].transform.position = new Vector3(handObjects[i].transform.position.x, 0.9855669f, cardz);
                         }
                     }
                 }
@@ -1017,6 +1019,12 @@ public class Cards : NetworkBehaviour
             connectedPlayers.Add(conn);
         int assignedPlayerNumber = connectedPlayers.IndexOf(conn) + 1;
         TargetAssignPlayerNumber(conn, assignedPlayerNumber);
+    }
+
+    [ServerRpc]
+    private void spawnObject(NetworkConnection conn, GameObject obj)
+    {
+        InstanceFinder.ServerManager.Spawn(obj);
     }
 
     [TargetRpc]

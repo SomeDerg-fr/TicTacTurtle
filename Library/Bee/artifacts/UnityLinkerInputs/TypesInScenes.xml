@@ -29,6 +29,7 @@
 		<type fullname="FishNet.Object.EmptyNetworkBehaviour" preserve="nothing"/>
 		<type fullname="FishNet.Object.NetworkObject" preserve="nothing"/>
 		<type fullname="FishNet.Observing.NetworkObserver" preserve="nothing"/>
+		<type fullname="FishNet.Transporting.Tugboat.Tugboat" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>

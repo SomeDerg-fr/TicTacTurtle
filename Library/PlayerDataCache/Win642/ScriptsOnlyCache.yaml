@@ -28,6 +28,7 @@ ScriptsOnlyBuild:
     - FishNet.Object.EmptyNetworkBehaviour
     - FishNet.Object.NetworkObject
     - FishNet.Observing.NetworkObserver
+    - FishNet.Transporting.Tugboat.Tugboat
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -110,6 +111,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 26408}
     - Class: 114
       Script: {instanceID: 26490}
+    - Class: 114
+      Script: {instanceID: 26600}
     - Class: 114
       Script: {instanceID: 27218}
     - Class: 114
