@@ -479,10 +479,11 @@ public class Cards : NetworkBehaviour
 
         while (isPlacing)
         {
-            if (Input.mousePosition.x + 50 < initialX)
+            GlobalVariables globals = UnityEngine.Object.FindAnyObjectByType<GlobalVariables>();
+            if ((globals.players.Value == 1 && Input.mousePosition.x + 50 < initialX) || (globals.players.Value == 2 && Input.mousePosition.x - 50 > initialX))
             {
                 cardX = 0.92f;
-                if (Input.mousePosition.y - 50 > initialY)
+                if ((globals.players.Value == 1 && Input.mousePosition.y - 50 > initialY) || (globals.players.Value == 2 && Input.mousePosition.y + 50 < initialY))
                 {
                     //Pos 1
                     disableHighlights();
@@ -490,7 +491,7 @@ public class Cards : NetworkBehaviour
                     cardZ = 4.502f;
                     selectedSquare = 1;
                 }
-                else if (Input.mousePosition.y + 50 < initialY)
+                else if ((globals.players.Value == 1 && Input.mousePosition.y + 50 < initialY) || (globals.players.Value == 2 && Input.mousePosition.y - 50 > initialY))
                 {
                     //Pos 7
                     disableHighlights();
@@ -507,10 +508,10 @@ public class Cards : NetworkBehaviour
                     selectedSquare = 4;
                 }
             }
-            else if (Input.mousePosition.x - 50 > initialX)
+            else if ((globals.players.Value == 1 && Input.mousePosition.x - 50 > initialX) || (globals.players.Value == 2 && Input.mousePosition.x + 50 < initialX))
             {
                 cardX = 4.465f;
-                if (Input.mousePosition.y - 50 > initialY)
+                if ((globals.players.Value == 1 && Input.mousePosition.y - 50 > initialY) || (globals.players.Value == 2 && Input.mousePosition.y + 50 < initialY))
                 {
                     //Pos 3
                     disableHighlights();
@@ -518,7 +519,7 @@ public class Cards : NetworkBehaviour
                     cardZ = 4.502f;
                     selectedSquare = 3;
                 }
-                else if (Input.mousePosition.y + 50 < initialY)
+                else if ((globals.players.Value == 1 && Input.mousePosition.y + 50 < initialY) || (globals.players.Value == 2 && Input.mousePosition.y - 50 > initialY))
                 {
                     //Pos 9
                     disableHighlights();
@@ -538,7 +539,7 @@ public class Cards : NetworkBehaviour
             else
             {
                 cardX = 2.706f;
-                if (Input.mousePosition.y - 50 > initialY)
+                if ((globals.players.Value == 1 && Input.mousePosition.y - 50 > initialY) || (globals.players.Value == 2 && Input.mousePosition.y + 50 < initialY))
                 {
                     //Pos 2
                     disableHighlights();
@@ -546,7 +547,7 @@ public class Cards : NetworkBehaviour
                     cardZ = 4.502f;
                     selectedSquare = 2;
                 }
-                else if (Input.mousePosition.y + 50 < initialY)
+                else if ((globals.players.Value == 1 && Input.mousePosition.y + 50 < initialY) || (globals.players.Value == 2 && Input.mousePosition.y - 50 > initialY))
                 {
                     //Pos 8
                     disableHighlights();
