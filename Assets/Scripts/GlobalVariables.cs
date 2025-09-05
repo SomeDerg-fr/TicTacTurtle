@@ -7,7 +7,8 @@ using UnityEngine;
 public class GlobalVariables : NetworkBehaviour
 {
     public readonly SyncVar<int> players = new SyncVar<int>(1);
-    
+    public readonly SyncVar<Cards> serverBoard = new SyncVar<Cards>(null);
+
     [ServerRpc(RequireOwnership = false)]
     public void SetTurn(int amount)
     {

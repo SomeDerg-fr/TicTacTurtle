@@ -430,7 +430,7 @@ public class Cards : NetworkBehaviour
                             handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), Quaternion.identity);
                             handObjects[i].transform.Rotate(0, baseCardRot, 0);
                             handObjects[i].layer = LayerMask.NameToLayer("Hand");
-                            spawnObject(Owner, handObjects[i]);
+                            spawnObject(Owner, Turtles[drawnCard.getPassiveID()]);
                             break;
                         }
                     }
@@ -652,6 +652,7 @@ public class Cards : NetworkBehaviour
                     boardObj[selectedSquare - 1] = cardPrefab;
                     handCards[handIndex] = null;
                     Destroy(handObjects[handIndex]);
+                    spawnObject(Owner, Turtles[currentCard.getPassiveID()]);
                     ServerManager.Despawn(handObjects[handIndex]);
                     StartCoroutine(effect(currentCard, cardPrefab));
                     phase = "draw";
@@ -1025,7 +1026,8 @@ public class Cards : NetworkBehaviour
     [ServerRpc]
     private void spawnObject(NetworkConnection conn, GameObject obj)
     {
-        InstanceFinder.ServerManager.Spawn(obj);
+        GameObject tempObj = Instantiate(obj);
+        InstanceFinder.ServerManager.Spawn(tempObj);
     }
 
     [TargetRpc]
