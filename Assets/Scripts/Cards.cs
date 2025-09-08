@@ -430,7 +430,7 @@ public class Cards : NetworkBehaviour
                             handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), Quaternion.identity);
                             handObjects[i].transform.Rotate(0, baseCardRot, 0);
                             handObjects[i].layer = LayerMask.NameToLayer("Hand");
-                            spawnObject(Owner, Turtles[drawnCard.getPassiveID()]);
+                            spawnObject(Owner, Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), false, baseCardRot);
                             break;
                         }
                     }
@@ -652,7 +652,7 @@ public class Cards : NetworkBehaviour
                     boardObj[selectedSquare - 1] = cardPrefab;
                     handCards[handIndex] = null;
                     Destroy(handObjects[handIndex]);
-                    spawnObject(Owner, Turtles[currentCard.getPassiveID()]);
+                    spawnObject(Owner, Turtles[currentCard.getPassiveID()], cardPrefab.transform.position, true, baseCardRot);
                     ServerManager.Despawn(handObjects[handIndex]);
                     StartCoroutine(effect(currentCard, cardPrefab));
                     phase = "draw";
@@ -1024,9 +1024,20 @@ public class Cards : NetworkBehaviour
     }
 
     [ServerRpc]
-    private void spawnObject(NetworkConnection conn, GameObject obj)
+    private void spawnObject(NetworkConnection conn, GameObject obj, Vector3 vec, bool fall, float rot)
     {
-        GameObject tempObj = Instantiate(obj);
+        GameObject tempObj = Instantiate(obj, vec, Quaternion.identity);
+        tempObj.transform.Rotate(0, rot, 0);
+        if (fall)
+        {
+            tempObj.GetComponent<Rigidbody>().useGravity = true;
+            tempObj.GetComponent<Rigidbody>().isKinematic = false;
+        }
+        else
+        {
+            tempObj.GetComponent<Rigidbody>().useGravity = false;
+            tempObj.GetComponent<Rigidbody>().isKinematic = true;
+        }
         InstanceFinder.ServerManager.Spawn(tempObj);
     }
 
