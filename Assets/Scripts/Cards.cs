@@ -212,6 +212,21 @@ public class Cards : NetworkBehaviour
         }
     }
 
+    void AssignBoardObjects()
+    {
+        float[] cardX = new float[] {0.92f, 2.706f, 4.465f};
+        float[] cardZ = new float[] {4.502f, 1.689f, -1.118f};
+        var allObjects = GameObject.FindObjectsOfType<GameObject>();
+        for (int z = 0; z < 2; z++)
+        {
+            for (int x = 0; x < 2; x++)
+            {
+                Vector3 expectedPos = new Vector3(cardX[x], 0.16f, cardZ[z]);
+                boardObj[x+z*3] = allObjects.OrderBy(obj => Vector3.Distance(obj.transform.position, expectedPos)).FirstOrDefault();
+            }
+        }
+    }
+
     void Start()
     {
         int hi = 0;
@@ -268,6 +283,10 @@ public class Cards : NetworkBehaviour
         while (!connected)
         {
             return;
+        }
+        if (!isPlacing)
+        {
+            AssignBoardObjects();
         }
         GlobalVariables globals = UnityEngine.Object.FindAnyObjectByType<GlobalVariables>();
         if (globals.players.Value == 2 && currentPlayer == 1)
@@ -426,11 +445,8 @@ public class Cards : NetworkBehaviour
                     {
                         if (handCards[i] == null)
                         {
-                            handCards[i] = drawnCard;
-                            handObjects[i] = Instantiate(Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), Quaternion.identity);
-                            handObjects[i].transform.Rotate(0, baseCardRot, 0);
-                            handObjects[i].layer = LayerMask.NameToLayer("Hand");
-                            spawnObject(Owner, Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), false, baseCardRot);
+                            //handCards[i] = drawnCard;
+                            spawnObject(Owner, Turtles[drawnCard.getPassiveID()], new Vector3(cardx[i], 0.9855669f, cardz), false, baseCardRot, -1);
                             break;
                         }
                     }
@@ -466,6 +482,7 @@ public class Cards : NetworkBehaviour
     IEnumerator placing(Card currentCard, GameObject cardPrefab, int handIndex)
     {
         cardPrefab = Instantiate(Turtles[currentCard.getPassiveID()], new Vector3(2.706f, 0, 1.689f), Quaternion.identity);
+        Debug.Log(cardPrefab);
 
         cardPrefab.GetComponent<Rigidbody>().useGravity = false;
         cardPrefab.GetComponent<Rigidbody>().isKinematic = true;
@@ -652,7 +669,8 @@ public class Cards : NetworkBehaviour
                     boardObj[selectedSquare - 1] = cardPrefab;
                     handCards[handIndex] = null;
                     Destroy(handObjects[handIndex]);
-                    spawnObject(Owner, Turtles[currentCard.getPassiveID()], cardPrefab.transform.position, true, baseCardRot);
+                    Destroy(cardPrefab);
+                    spawnObject(Owner, Turtles[currentCard.getPassiveID()], cardPrefab.transform.position, true, baseCardRot, selectedSquare-1);
                     ServerManager.Despawn(handObjects[handIndex]);
                     StartCoroutine(effect(currentCard, cardPrefab));
                     phase = "draw";
@@ -679,8 +697,11 @@ public class Cards : NetworkBehaviour
                 initialY += 60;
             }
             yield return new WaitForSeconds(0.000001f);
-            cardPrefab.transform.position = new Vector3(cardX, cardY, cardZ);
-
+            if (cardPrefab != null)
+            {
+                cardPrefab.transform.position = new Vector3(cardX, cardY, cardZ);
+            }
+            
             if (Input.GetMouseButtonDown(1))
             {
                 isPlacing = false;
@@ -1024,10 +1045,12 @@ public class Cards : NetworkBehaviour
     }
 
     [ServerRpc]
-    private void spawnObject(NetworkConnection conn, GameObject obj, Vector3 vec, bool fall, float rot)
+    private void spawnObject(NetworkConnection conn, GameObject obj, Vector3 vec, bool fall, float rot, int bPos)
     {
+        InstanceFinder.ServerManager.Spawn(obj);
         GameObject tempObj = Instantiate(obj, vec, Quaternion.identity);
         tempObj.transform.Rotate(0, rot, 0);
+        tempObj.transform.Translate(vec);
         if (fall)
         {
             tempObj.GetComponent<Rigidbody>().useGravity = true;

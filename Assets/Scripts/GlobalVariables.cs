@@ -7,13 +7,19 @@ using UnityEngine;
 public class GlobalVariables : NetworkBehaviour
 {
     public readonly SyncVar<int> players = new SyncVar<int>(1);
-    public readonly SyncVar<Cards> serverBoard = new SyncVar<Cards>(null);
+    public readonly SyncList<Cards> serverBoard = new SyncList<Cards>();
 
     [ServerRpc(RequireOwnership = false)]
     public void SetTurn(int amount)
     {
         players.Value = amount;
         Debug.Log("peanits "+amount);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    public void SetBoardCard(int index, Cards c)
+    {
+        serverBoard[index] = c;
     }
 
     // Start is called before the first frame update
