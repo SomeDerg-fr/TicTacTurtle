@@ -398,6 +398,8 @@
 "Assets/Scripts/Button.cs"
 "Assets/Scripts/Cards.cs"
 "Assets/Scripts/GlobalVariables.cs"
+"Assets/Scripts/obj/Debug/net10.0/Cards.AssemblyInfo.cs"
+"Assets/Scripts/obj/Debug/net10.0/Cards.GlobalUsings.g.cs"
 -langversion:9.0
 
 /deterministic
@@ -406,6 +408,7 @@
 /nologo
 /RuntimeMetadataVersion:v4.0.30319
 
+/langversion:latest
 /nowarn:0169
 /nowarn:0649
 /nowarn:0282

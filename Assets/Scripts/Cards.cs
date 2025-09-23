@@ -2,24 +2,25 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Runtime.CompilerServices;
-using System.Xml;
-using JetBrains.Annotations;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEditor;
+//using System.Linq.Expressions;
+//using System.Runtime.CompilerServices;
+//using System.Xml;
+//using JetBrains.Annotations;
+//using Unity.VisualScripting;
+//using Unity.VisualScripting.Dependencies.NCalc;
+//using UnityEditor;
 using UnityEngine;
-using UnityEngine.LowLevelPhysics;
-using UnityEngine.UIElements;
+//using UnityEngine.LowLevelPhysics;
+//using UnityEngine.UIElements;
 using FishNet.Connection;
 using FishNet.Object;
-using FishNet.Example.ColliderRollbacks;
-using FishNet.Example.Scened;
-using FishNet.Object.Synchronizing;
-using FishNet.Object.Synchronizing.Internal;
-using NUnit.Framework;
 using FishNet;
+//using FishNet.Example.ColliderRollbacks;
+//using FishNet.Example.Scened;
+using FishNet.Object.Synchronizing;
+//using FishNet.Object.Synchronizing.Internal;
+//using NUnit.Framework;
+//using FishNet;
 
 public class Cards : NetworkBehaviour
 {
@@ -288,6 +289,10 @@ public class Cards : NetworkBehaviour
         {
             AssignBoardObjects();
         }
+        if (phase == "action")
+        {
+            AssignBoardObjects();
+        }
         GlobalVariables globals = UnityEngine.Object.FindAnyObjectByType<GlobalVariables>();
         if (globals.players.Value == 2 && currentPlayer == 1)
         {
@@ -496,6 +501,10 @@ public class Cards : NetworkBehaviour
 
         while (isPlacing)
         {
+            if (cardPrefab != null)
+            {
+                cardPrefab.SetActive(true);
+            }
             GlobalVariables globals = UnityEngine.Object.FindAnyObjectByType<GlobalVariables>();
             if ((globals.players.Value == 1 && Input.mousePosition.x + 50 < initialX) || (globals.players.Value == 2 && Input.mousePosition.x - 50 > initialX))
             {
@@ -644,11 +653,9 @@ public class Cards : NetworkBehaviour
                         isPlacing = false;
                         board[selectedSquare - 1] = currentCard;
                         Destroy(boardObj[selectedSquare - 1]);
-                        ServerManager.Despawn(boardObj[selectedSquare - 1]);
                         boardObj[selectedSquare - 1] = cardPrefab;
                         handCards[handIndex] = null;
                         Destroy(handObjects[handIndex]);
-                        ServerManager.Despawn(handObjects[handIndex]);
                         handObjects[handIndex] = null;
                         StartCoroutine(effect(currentCard, cardPrefab));
                         phase = "draw";
@@ -665,13 +672,12 @@ public class Cards : NetworkBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     isPlacing = false;
+                    spawnObject(Owner, Turtles[currentCard.getPassiveID()], cardPrefab.transform.position, true, baseCardRot, selectedSquare-1);
                     board[selectedSquare - 1] = currentCard;
                     boardObj[selectedSquare - 1] = cardPrefab;
                     handCards[handIndex] = null;
                     Destroy(handObjects[handIndex]);
                     Destroy(cardPrefab);
-                    spawnObject(Owner, Turtles[currentCard.getPassiveID()], cardPrefab.transform.position, true, baseCardRot, selectedSquare-1);
-                    ServerManager.Despawn(handObjects[handIndex]);
                     StartCoroutine(effect(currentCard, cardPrefab));
                     phase = "draw";
                 }
@@ -707,17 +713,10 @@ public class Cards : NetworkBehaviour
                 isPlacing = false;
                 disableHighlights();
                 Destroy(cardPrefab);
-                ServerManager.Despawn(cardPrefab);
                 yield break;
             }
         }
         yield return new WaitForSeconds(0.001f);
-        ServerManager.Spawn(cardPrefab);
-        cardPrefab.GetComponent<Rigidbody>().useGravity = true;
-        cardPrefab.GetComponent<Rigidbody>().isKinematic = false;
-        cardPrefab.layer = LayerMask.NameToLayer("Board");
-
-
         disableHighlights();
     }
 
@@ -864,7 +863,6 @@ public class Cards : NetworkBehaviour
                                 disableHighlights();
                                 StartCoroutine(giveBack(board[selectedSquare - 1]));
                                 Destroy(boardObj[selectedSquare - 1]);
-                                ServerManager.Despawn(boardObj[selectedSquare - 1]);
                                 boardObj[selectedSquare - 1] = cardPrefab;
                                 boardObj[selectedSquare - 1] = null;
                                 board[selectedSquare - 1] = null;
@@ -953,7 +951,6 @@ public class Cards : NetworkBehaviour
                             if (Input.GetMouseButtonDown(0))
                             {
                                 Destroy(handObjects[i]);
-                                ServerManager.Despawn(handObjects[i]);
                                 handCards[i] = null;
                                 handObjects[i] = null;
                             }
@@ -1047,7 +1044,7 @@ public class Cards : NetworkBehaviour
     [ServerRpc]
     private void spawnObject(NetworkConnection conn, GameObject obj, Vector3 vec, bool fall, float rot, int bPos)
     {
-        InstanceFinder.ServerManager.Spawn(obj);
+        //InstanceFinder.ServerManager.Spawn(obj);
         GameObject tempObj = Instantiate(obj, vec, Quaternion.identity);
         tempObj.transform.Rotate(0, rot, 0);
         tempObj.transform.Translate(vec);

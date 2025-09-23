@@ -25,6 +25,7 @@ ScriptsOnlyBuild:
     - FishNet.Managing.NetworkManager
     - FishNet.Managing.Object.DefaultPrefabObjects
     - FishNet.Managing.Observing.ObserverManager
+    - FishNet.Object.Editing.NetworkObjectEditor
     - FishNet.Object.EmptyNetworkBehaviour
     - FishNet.Object.NetworkObject
     - FishNet.Observing.NetworkObserver
@@ -102,65 +103,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25948}
+      Script: {instanceID: 1526}
     - Class: 114
-      Script: {instanceID: 26266}
+      Script: {instanceID: 25954}
     - Class: 114
-      Script: {instanceID: 26280}
+      Script: {instanceID: 26272}
     - Class: 114
-      Script: {instanceID: 26408}
+      Script: {instanceID: 26286}
     - Class: 114
-      Script: {instanceID: 26490}
+      Script: {instanceID: 26414}
     - Class: 114
-      Script: {instanceID: 26600}
+      Script: {instanceID: 26496}
     - Class: 114
-      Script: {instanceID: 27218}
+      Script: {instanceID: 26606}
     - Class: 114
-      Script: {instanceID: 27750}
+      Script: {instanceID: 27222}
     - Class: 114
-      Script: {instanceID: 27776}
+      Script: {instanceID: 27756}
     - Class: 114
-      Script: {instanceID: 28202}
+      Script: {instanceID: 27782}
     - Class: 114
-      Script: {instanceID: 28248}
+      Script: {instanceID: 28208}
     - Class: 114
-      Script: {instanceID: 28268}
+      Script: {instanceID: 28254}
     - Class: 114
-      Script: {instanceID: 28306}
+      Script: {instanceID: 28274}
     - Class: 114
-      Script: {instanceID: 28736}
+      Script: {instanceID: 28312}
     - Class: 114
-      Script: {instanceID: 29846}
+      Script: {instanceID: 28742}
     - Class: 114
-      Script: {instanceID: 29862}
+      Script: {instanceID: 29852}
     - Class: 114
-      Script: {instanceID: 29866}
+      Script: {instanceID: 29868}
     - Class: 114
-      Script: {instanceID: 30358}
+      Script: {instanceID: 29872}
     - Class: 114
-      Script: {instanceID: 30486}
+      Script: {instanceID: 30364}
     - Class: 114
-      Script: {instanceID: 30604}
+      Script: {instanceID: 30492}
     - Class: 114
-      Script: {instanceID: 30700}
+      Script: {instanceID: 30610}
     - Class: 114
-      Script: {instanceID: 30718}
+      Script: {instanceID: 30706}
     - Class: 114
-      Script: {instanceID: 30740}
+      Script: {instanceID: 30724}
     - Class: 114
-      Script: {instanceID: 30778}
+      Script: {instanceID: 30746}
     - Class: 114
-      Script: {instanceID: 31536}
+      Script: {instanceID: 30784}
     - Class: 114
-      Script: {instanceID: 31892}
+      Script: {instanceID: 31542}
     - Class: 114
-      Script: {instanceID: 31948}
+      Script: {instanceID: 31898}
     - Class: 114
-      Script: {instanceID: 32476}
+      Script: {instanceID: 31954}
     - Class: 114
-      Script: {instanceID: 32786}
+      Script: {instanceID: 32482}
     - Class: 114
-      Script: {instanceID: 32872}
+      Script: {instanceID: 32792}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -215,7 +216,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 26622}
+      Script: {instanceID: 26628}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -223,6 +224,18 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 98c9cdc32649cea415149e17aa5329e2
+    assemblyName: Assembly-CSharp
+    namespaceName: FishNet.Upgrading.Mirror.Editing
+    className: UpgradeFromMirrorMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 43c8b589c2956198efabf5c0ec8cbf59
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Cards
   - hash:
       serializedVersion: 2
       Hash: e39b696af0974c9220ead54cddf50097
@@ -469,12 +482,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: 98c9cdc32649cea415149e17aa5329e2
-    assemblyName: Assembly-CSharp
-    namespaceName: FishNet.Upgrading.Mirror.Editing
-    className: UpgradeFromMirrorMenu
   - hash:
       serializedVersion: 2
       Hash: 1553f209ae0b2d5d3a35685fca55f9c3
@@ -1699,12 +1706,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameInvisibleMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 43c8b589c2956198efabf5c0ec8cbf59
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Cards
   - hash:
       serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d

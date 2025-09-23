@@ -26,6 +26,7 @@
 		<type fullname="FishNet.Managing.NetworkManager" preserve="nothing"/>
 		<type fullname="FishNet.Managing.Object.DefaultPrefabObjects" preserve="nothing"/>
 		<type fullname="FishNet.Managing.Observing.ObserverManager" preserve="nothing"/>
+		<type fullname="FishNet.Object.Editing.NetworkObjectEditor" preserve="nothing"/>
 		<type fullname="FishNet.Object.EmptyNetworkBehaviour" preserve="nothing"/>
 		<type fullname="FishNet.Object.NetworkObject" preserve="nothing"/>
 		<type fullname="FishNet.Observing.NetworkObserver" preserve="nothing"/>

@@ -175,6 +175,13 @@
         {
             "managedAssemblyName": "FishNet.Runtime.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "FishNet.Object.Editing.NetworkObjectEditor",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "FishNet.Runtime.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "FishNet.Object.EmptyNetworkBehaviour",
             "moduleName": "",
             "usedInScenes": []
