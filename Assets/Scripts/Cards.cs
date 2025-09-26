@@ -18,6 +18,7 @@ using FishNet;
 //using FishNet.Example.ColliderRollbacks;
 //using FishNet.Example.Scened;
 using FishNet.Object.Synchronizing;
+using UnityEditor;
 //using FishNet.Object.Synchronizing.Internal;
 //using NUnit.Framework;
 //using FishNet;
@@ -486,7 +487,12 @@ public class Cards : NetworkBehaviour
     }
     IEnumerator placing(Card currentCard, GameObject cardPrefab, int handIndex)
     {
+        GlobalVariables globals = UnityEngine.Object.FindAnyObjectByType<GlobalVariables>();
         cardPrefab = Instantiate(Turtles[currentCard.getPassiveID()], new Vector3(2.706f, 0, 1.689f), Quaternion.identity);
+        if (globals.players.Value == 2)
+        {
+            cardPrefab.transform.Rotate(0, 180f, 0);
+        }
         Debug.Log(cardPrefab);
 
         cardPrefab.GetComponent<Rigidbody>().useGravity = false;
@@ -505,7 +511,6 @@ public class Cards : NetworkBehaviour
             {
                 cardPrefab.SetActive(true);
             }
-            GlobalVariables globals = UnityEngine.Object.FindAnyObjectByType<GlobalVariables>();
             if ((globals.players.Value == 1 && Input.mousePosition.x + 50 < initialX) || (globals.players.Value == 2 && Input.mousePosition.x - 50 > initialX))
             {
                 cardX = 0.92f;
@@ -706,6 +711,10 @@ public class Cards : NetworkBehaviour
             if (cardPrefab != null)
             {
                 cardPrefab.transform.position = new Vector3(cardX, cardY, cardZ);
+                if (globals.players.Value == 2)
+                {
+                    cardPrefab.transform.Translate(new Vector3(2.106f, 0f, 3.359f));
+                }
             }
             
             if (Input.GetMouseButtonDown(1))
@@ -1047,7 +1056,7 @@ public class Cards : NetworkBehaviour
         //InstanceFinder.ServerManager.Spawn(obj);
         GameObject tempObj = Instantiate(obj, vec, Quaternion.identity);
         tempObj.transform.Rotate(0, rot, 0);
-        tempObj.transform.Translate(vec);
+        tempObj.transform.position = vec;
         if (fall)
         {
             tempObj.GetComponent<Rigidbody>().useGravity = true;
