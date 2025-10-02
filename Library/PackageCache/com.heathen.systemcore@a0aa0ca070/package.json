@@ -1,0 +1,19 @@
+{
+  "name": "com.heathen.systemcore",
+  "displayName": "System Core",
+  "version": "3.19.0",
+  "unity": "2021.3",
+  "author": {
+    "name": "Heathen Group",
+    "email": "support@heathen.group",
+    "url": "https://heathen.group"
+  },
+  "dependencies": {
+    "com.unity.mathematics": "1.2.6"
+  },
+  "keywords": [],
+  "documentationUrl": "https://kb.heathenengineering.com/assets/system-core",
+  "license": "LICENSE.md",
+  "description": "Scriptable Object based framework enabling the creation of game events and variables in the asset database.\n\nCreated by Heathen Engineering",
+  "_fingerprint": "a39dde5ef29924c934e9ba84d50548e27b837997"
+}

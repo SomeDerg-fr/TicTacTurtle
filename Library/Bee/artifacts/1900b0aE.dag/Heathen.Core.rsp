@@ -1,0 +1,618 @@
+-target:library
+-out:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Core.dll"
+-refout:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Core.ref.dll"
+-define:UNITY_2023_2_20
+-define:UNITY_2023_2
+-define:UNITY_2023
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_3_OR_NEWER
+-define:UNITY_2017_4_OR_NEWER
+-define:UNITY_2018_1_OR_NEWER
+-define:UNITY_2018_2_OR_NEWER
+-define:UNITY_2018_3_OR_NEWER
+-define:UNITY_2018_4_OR_NEWER
+-define:UNITY_2019_1_OR_NEWER
+-define:UNITY_2019_2_OR_NEWER
+-define:UNITY_2019_3_OR_NEWER
+-define:UNITY_2019_4_OR_NEWER
+-define:UNITY_2020_1_OR_NEWER
+-define:UNITY_2020_2_OR_NEWER
+-define:UNITY_2020_3_OR_NEWER
+-define:UNITY_2021_1_OR_NEWER
+-define:UNITY_2021_2_OR_NEWER
+-define:UNITY_2021_3_OR_NEWER
+-define:UNITY_2022_1_OR_NEWER
+-define:UNITY_2022_2_OR_NEWER
+-define:UNITY_2022_3_OR_NEWER
+-define:UNITY_2023_1_OR_NEWER
+-define:UNITY_2023_2_OR_NEWER
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_INCLUDE_TESTS
+-define:ENABLE_AR
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_TEXTURE_STREAMING
+-define:ENABLE_VIRTUALTEXTURING
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_EDITOR_GAME_SERVICES
+-define:ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_DIRECTOR_TEXTURE
+-define:ENABLE_MANAGED_JOBS
+-define:ENABLE_MANAGED_TRANSFORM_JOBS
+-define:ENABLE_MANAGED_ANIMATION_JOBS
+-define:ENABLE_MANAGED_AUDIO_JOBS
+-define:ENABLE_MANAGED_UNITYTLS
+-define:INCLUDE_DYNAMIC_GI
+-define:ENABLE_SCRIPTING_GC_WBARRIERS
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_MARSHALLING_TESTS
+-define:ENABLE_VIDEO
+-define:ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK
+-define:ENABLE_ACCELERATOR_CLIENT_DEBUGGING
+-define:TEXTCORE_1_0_OR_NEWER
+-define:PLATFORM_STANDALONE_WIN
+-define:PLATFORM_STANDALONE
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_NVIDIA
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+-define:ENABLE_CLUSTER_SYNC
+-define:ENABLE_CLUSTERINPUT
+-define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+-define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+-define:PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER
+-define:PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION
+-define:PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS
+-define:ENABLE_MONO
+-define:NET_STANDARD_2_0
+-define:NET_STANDARD
+-define:NET_STANDARD_2_1
+-define:NETSTANDARD
+-define:NETSTANDARD2_1
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_UNITY_COLLECTIONS_CHECKS
+-define:ENABLE_BURST_AOT
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_DIRECTOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_TILEMAP
+-define:ENABLE_TIMELINE
+-define:ENABLE_LEGACY_INPUT_MANAGER
+-define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
+-define:FISHNET
+-define:FISHNET_V4
+-define:STEAMWORKS_NET
+-define:HE_SYSCORE
+-define:CSHARP_7_OR_LATER
+-define:CSHARP_7_3_OR_NEWER
+-r:"Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.EditorToolbarModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphToolsFoundationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridAndSnapModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.GridModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.Physics2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.PhysicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.PresetsUIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.PropertiesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.QuickSearchModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.SafeModeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneViewModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.ShaderFoundryModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.SketchUpModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteMaskModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.SpriteShapeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.TerrainModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreFontEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextCoreTextEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.TextRenderingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.TilemapModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.TreeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIAutomationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIBuilderModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.VFXModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.VideoModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CommandStateObserverModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ContentLoadModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.GraphToolsFoundationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.HierarchyCoreModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputForUIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.MarshallingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.MultiplayerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.PropertiesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsCommonModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"Library/PackageCache/com.unity.collab-proxy@2.8.2/Lib/Editor/log4netPlastic.dll"
+-r:"Library/PackageCache/com.unity.collab-proxy@2.8.2/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll"
+-r:"Library/PackageCache/com.unity.collab-proxy@2.8.2/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"Library/PackageCache/com.unity.collab-proxy@2.8.2/Lib/Editor/unityplastic.dll"
+-r:"Library/PackageCache/com.unity.ext.nunit@2.0.5/net40/unity-custom/nunit.framework.dll"
+-r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
+-r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+-analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Common/CommandLine.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Common/HeathenBehaviour.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Common/HeathenUIBehaviour.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Common/LabelAttribute.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Common/ScriptableTag.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/BoolChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/ChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/CollectionChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/ColorChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/DoubleChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/FloatChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/IntChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/LongChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/QuaternionChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/RectTransformChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/StringChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/TransformChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/UnsignedIntChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/UnsignedLongChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/Vector2ChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/Vector2IntChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/Vector3ChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Event Listeners/Vector4ChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/BoolChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/ChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/ChangeEventData.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/CollectionChangeEventData.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/DoubleChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/Float2ChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/Float3ChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/Float4ChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/FloatChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/IChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/ICollectionChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/IntChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/LongChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/QuaternionChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/StringChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/UnsignedIntChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Change Events/UnsignedLongChangeEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/CollisionEnterSender.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/CollisionExitSender.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/CollisionStaySender.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/BoolGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/ColliderGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/CollisionGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/DoubleGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/Float2GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/Float3GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/Float4GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/FloatGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/IChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/ICollectionChangeEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/IGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/Int2GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/Int3GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/Int4GameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/IntGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/LongGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/StringGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/UnsignedIntGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Event Listeners/UnsignedLongGameEventListener.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/BoolGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/ColliderGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/CollisionGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/DoubleGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/EventData.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/Float2GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/Float3GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/Float4GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/FloatGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/IGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/Int2GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/Int3GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/Int4GameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/IntGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/LongGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/SceneProcessStateGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/StringGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/UnsignedIntGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/Game Events/UnsignedLongGameEvent.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/TriggerEnterSender.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/TriggerExitSender.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/TriggerStaySender.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Events/UnityCustomEvents.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/KeyedDataLibrary.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/KeyedObject.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableColor.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableQuaternion.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableRectTransform.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableTransform.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableVector2.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableVector2Int.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableVector3.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Serializable Data Types/SerializableVector4.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/CollectionDataVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/DataLibraryVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/DataVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/ICollectionDataVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/IDataVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/KeyedReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/KeyedStringListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/KeyedVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/SceneProcessState.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/VariableReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Common/VariableReferenceType.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Animation Curve/AnimationCurveListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Animation Curve/AnimationCurveListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Animation Curve/AnimationCurveReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Animation Curve/AnimationCurveVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Bool/BoolListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Bool/BoolListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Bool/BoolReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Bool/BoolVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Camera/CameraListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Camera/CameraPointerListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Camera/CameraPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Camera/CameraReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Canvas/CanvasListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Canvas/CanvasPointerListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Canvas/CanvasPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Canvas/CanvasReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Color/ColorListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Color/ColorListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Color/ColorReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Color/ColorVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Component/ComponentListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Component/ComponentPointerListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Component/ComponentPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Component/ComponentReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Double/DoubleListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Double/DoubleListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Double/DoubleReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Double/DoubleVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Float/FloatListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Float/FloatListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Float/FloatReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Float/FloatVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/GameObject/GameObjectListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/GameObject/GameObjectPointerListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/GameObject/GameObjectReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/GameObject/GameObjectVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Image Fill Method/ImageFillMethodPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Image Fill Method/ImageFillMethodReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Image Type/ImageTypePointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Image Type/ImageTypeReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Int/IntListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Int/IntListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Int/IntReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Int/IntVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Long/LongListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Long/LongListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Long/LongReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Long/LongVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Material/MaterialPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Material/MaterialReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Sprite/SpritePointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Sprite/SpriteReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/String/MultilineStringReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/String/StringListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/String/StringListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/String/StringReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/String/StringVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Texture/TexturePointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Texture/TextureReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformPointerListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformPointerListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformPointerReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/RectTransformVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformPointerListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformPointerListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformPointerReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformPointerVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Transform/TransformVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Int/UnsignedIntListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Int/UnsignedIntListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Int/UnsignedIntVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Long/UnsignedLongListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Long/UnsignedLongListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Long/UnsignedLongReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Unsigned Long/UnsignedLongVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/QuaternionListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/QuaternionListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/QuaternionReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/QuaternionVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2IntListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2IntListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2IntReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2IntVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2ListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2ListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2Reference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector2Variable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector3ListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector3ListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector3Reference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector3Variable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector4ListReference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector4ListVariable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector4Reference.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/Data Types/Vector/Vector4Variable.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringField.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringFieldDataModel.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringFieldManager.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringFieldRecord.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringFieldValue.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringLibrary.cs"
+"Library/PackageCache/com.heathen.systemcore@a0aa0ca070/Runtime/Variables/String Field/StringSet.cs"
+-langversion:9.0
+
+/deterministic
+/optimize+
+/debug:portable
+/nologo
+/RuntimeMetadataVersion:v4.0.30319
+
+/langversion:latest
+/nowarn:0169
+/nowarn:0649
+/nowarn:0282
+/nowarn:1701
+/nowarn:1702
+/utf8output
+/preferreduilang:en-US
+
+-warn:0
+
+/additionalfile:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Core.UnityAdditionalFile.txt"

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E2276FBF-F845-661B-C5A8-D0804592EF43}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Codegen.Cecil", "FishNet.Codegen.Cecil.csproj", "{D0187BB8-77D6-1B3F-1D3B-04E85ED5AA11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Runtime", "FishNet.Runtime.csproj", "{14E7B864-B0E0-D2B1-8A72-08EC21132F20}"
@@ -11,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameKit.Dependencies", "Gam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishNet.Demos", "FishNet.Demos.csproj", "{767425F9-AD32-4E44-61AA-E66AB65AC3DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{E2276FBF-F845-661B-C5A8-D0804592EF43}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{0B8D1424-2F31-ED1D-641F-2C06A99190EE}"
 EndProject
 Global
@@ -21,6 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0187BB8-77D6-1B3F-1D3B-04E85ED5AA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0187BB8-77D6-1B3F-1D3B-04E85ED5AA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0187BB8-77D6-1B3F-1D3B-04E85ED5AA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,10 +45,6 @@ Global
 		{767425F9-AD32-4E44-61AA-E66AB65AC3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{767425F9-AD32-4E44-61AA-E66AB65AC3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{767425F9-AD32-4E44-61AA-E66AB65AC3DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2276FBF-F845-661B-C5A8-D0804592EF43}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B8D1424-2F31-ED1D-641F-2C06A99190EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B8D1424-2F31-ED1D-641F-2C06A99190EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B8D1424-2F31-ED1D-641F-2C06A99190EE}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -121,6 +121,7 @@
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
 -define:FISHNET
 -define:FISHNET_V4
+-define:STEAMWORKS_NET
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
@@ -374,11 +375,19 @@
 -r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/com.rlabrecque.steamworks.net.editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/com.rlabrecque.steamworks.net.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Codegen.Cecil.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Demos.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/GameKit.Dependencies.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Core.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Core.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Steamworks.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Heathen.Steamworks.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"

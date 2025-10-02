@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/MenuSceneSteam.unity
     guid: 5bb844261c4c41546a863f7b3577ba1d
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Bootstrap.unity
+    guid: 862b77492102d9f4694f5737ef0e2dcf
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
