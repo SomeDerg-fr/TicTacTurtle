@@ -101,8 +101,8 @@
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\ParameterReference.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\rocks\Mono.Cecil.Rocks\MethodBodyRocks.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono\MergeSort.cs" />
-    <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\TypeComparisonMode.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\IGenericInstance.cs" />
+    <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\TypeComparisonMode.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\TypeDefinition.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\Mono.Cecil\MethodReference.cs" />
     <Compile Include="Assets\FishNet\CodeGenerating\cecil-0.11.4\rocks\Mono.Cecil.Rocks\ParameterReferenceRocks.cs" />

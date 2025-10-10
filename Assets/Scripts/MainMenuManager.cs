@@ -40,7 +40,7 @@ public class MainMenuManager : MonoBehaviour
     public static void LobbyEntered(string lobbyName, bool isHost)
     {
         instance.lobbyTitle.text = lobbyName;
-        instance.startGameButton.gameObject.SetActive(isHost);
+        //instance.startGameButton.gameObject.SetActive(isHost);
         instance.lobbyIDText.text = BootstrapManager.CurrentLobbyID.ToString();
         instance.OpenLobby();
     }
@@ -66,6 +66,6 @@ public class MainMenuManager : MonoBehaviour
     public void StartGame()
     {
         string[] scenesToClose = new string[] { "MenuSceneSteam" };
-        //BootstrapNetworkManager.ChangeNetworkScene("SteamGameScene", scenesToClose);
+        BootstrapNetworkManager.ChangeNetworkScene("Game", scenesToClose);
     }
 }

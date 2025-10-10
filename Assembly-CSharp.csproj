@@ -68,19 +68,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BootstrapManager.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\Core\LocalPacket.cs" />
-    <Compile Include="Assets\Scripts\obj\Debug\net10.0\BootstrapManager.AssemblyInfo.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\Core\ClientSocket.cs" />
     <Compile Include="Assets\Scripts\MainMenuManager.cs" />
+    <Compile Include="Assets\Scripts\BootstrapNetworkManager.cs" />
     <Compile Include="Assets\FishNet\Upgrading\UpgradeFromMirrorMenu.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\FishySteamworks.cs" />
     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
-    <Compile Include="Assets\Scripts\obj\Debug\net10.0\BootstrapManager.GlobalUsings.g.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\Core\ServerSocket.cs" />
-    <Compile Include="Assets\Scripts\obj\Debug\net10.0\Cards.GlobalUsings.g.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\Core\ClientHostSocket.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\Core\BidirectionalDictionary.cs" />
-    <Compile Include="Assets\Scripts\obj\Debug\net10.0\Cards.AssemblyInfo.cs" />
     <Compile Include="Assets\FishNet\Upgrading\EdgegapMenu.cs" />
     <Compile Include="Assets\FishNet\Plugins\FishySteamworks\Core\CommonSocket.cs" />
     <Compile Include="Assets\Scripts\Cards.cs" />
@@ -1111,12 +1108,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">

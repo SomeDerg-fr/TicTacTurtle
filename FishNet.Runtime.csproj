@@ -223,10 +223,10 @@
     <Compile Include="Assets\FishNet\Runtime\Serializing\ReaderPool.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\NetworkManager.cs" />
     <Compile Include="Assets\FishNet\Runtime\Connection\NetworkConnection.Observers.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Observing\Conditions\GridCondition\HashGrid.cs" />
     <Compile Include="Assets\FishNet\Runtime\Object\ChangedTransformProperties.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Managing\Server\ServerManager.Broadcast.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Observing\Conditions\GridCondition\HashGrid.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\Timing\PhysicsMode.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Managing\Server\ServerManager.Broadcast.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\Server\Object\ServerObjects.Parsing.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\NetworkManager.ObjectPooling.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\Scened\LoadUnloadDatas\LoadOptions.cs" />
@@ -324,8 +324,8 @@
     <Compile Include="Assets\FishNet\Runtime\Managing\Scened\SceneManager.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\Timing\MovingAverage.cs" />
     <Compile Include="Assets\FishNet\Runtime\Serializing\SceneComparer.cs" />
-    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\NetworkCollision2D.cs" />
     <Compile Include="Assets\FishNet\Runtime\Connection\OldTickOption.cs" />
+    <Compile Include="Assets\FishNet\Runtime\Generated\Component\Prediction\NetworkCollision2D.cs" />
     <Compile Include="Assets\FishNet\Runtime\Transporting\Transports\Tugboat\LiteNetLib\Utils\INetSerializable.cs" />
     <Compile Include="Assets\FishNet\Runtime\Object\Synchronizing\SyncTypeSetting.cs" />
     <Compile Include="Assets\FishNet\Runtime\Managing\Scened\LoadUnloadDatas\SceneScopeTypes.cs" />

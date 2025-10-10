@@ -412,14 +412,11 @@
 "Assets/FishNet/Upgrading/MirrorUpgrade.cs"
 "Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
 "Assets/Scripts/BootstrapManager.cs"
+"Assets/Scripts/BootstrapNetworkManager.cs"
 "Assets/Scripts/Button.cs"
 "Assets/Scripts/Cards.cs"
 "Assets/Scripts/GlobalVariables.cs"
 "Assets/Scripts/MainMenuManager.cs"
-"Assets/Scripts/obj/Debug/net10.0/BootstrapManager.AssemblyInfo.cs"
-"Assets/Scripts/obj/Debug/net10.0/BootstrapManager.GlobalUsings.g.cs"
-"Assets/Scripts/obj/Debug/net10.0/Cards.AssemblyInfo.cs"
-"Assets/Scripts/obj/Debug/net10.0/Cards.GlobalUsings.g.cs"
 -langversion:9.0
 
 /deterministic
