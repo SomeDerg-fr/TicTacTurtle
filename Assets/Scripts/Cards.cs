@@ -102,19 +102,20 @@ public class Cards : NetworkBehaviour
 
     private int myPlayerNumber = 0;
 
-    public override void OnStartClient()
+    private IEnumerator OnStart()
     {
-        if (!this.IsOwner)
-        {
-            GetComponent<Cards>().enabled = false;
-            return;
-        }
+        //if (!this.IsOwner)
+        //{
+            //GetComponent<Cards>().enabled = false;
+            //yield break;
+        //}
 
         // Request player number from server
         RequestPlayerNumber(Owner);
 
         // Wait for myPlayerNumber to be set before setup
         StartCoroutine(WaitForPlayerNumber());
+        yield break;
     }
 
     private IEnumerator WaitForPlayerNumber()
@@ -126,7 +127,6 @@ public class Cards : NetworkBehaviour
         }
         Debug.Log("Player number assigned: " + myPlayerNumber);
 
-        // Now do your hand/card setup
         deck = new Card[Turtles.Length];
         deck[0] = new Card("Turtle", new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, -1, 0);
         deck[1] = new Card("Spy Turtle", new int[] { 1, 3, 5, 7, 9 }, 0, 1);
@@ -231,13 +231,14 @@ public class Cards : NetworkBehaviour
 
     void Start()
     {
+        Debug.Log("start");
         int hi = 0;
         foreach (GameObject obj in objHighlights)
         {
             highlights[hi] = Instantiate(obj, obj.transform.position, Quaternion.identity);
             hi++;
         }
-
+        StartCoroutine(OnStart());
     }
     Ray ray;
     RaycastHit hit;
@@ -1044,6 +1045,8 @@ public class Cards : NetworkBehaviour
     [ServerRpc]
     private void RequestPlayerNumber(NetworkConnection conn)
     {
+        Debug.Log(conn);
+        Debug.Log(connectedPlayers);
         if (!connectedPlayers.Contains(conn))
             connectedPlayers.Add(conn);
         int assignedPlayerNumber = connectedPlayers.IndexOf(conn) + 1;
