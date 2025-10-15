@@ -13,10 +13,16 @@ public class MainMenuManager : MonoBehaviour
  
     [SerializeField] private TextMeshProUGUI lobbyTitle, lobbyIDText;
     [SerializeField] private Button startGameButton;
+    
+    // Add reference to GlobalVariables
+    private GlobalVariables globalVariables;
+    
     private void Awake() => instance = this;
  
     private void Start()
     {
+        // Find the GlobalVariables component in the scene
+        globalVariables = FindObjectOfType<GlobalVariables>();
         OpenMainMenu();
     }
  
@@ -42,6 +48,14 @@ public class MainMenuManager : MonoBehaviour
         instance.lobbyTitle.text = lobbyName;
         //instance.startGameButton.gameObject.SetActive(isHost);
         instance.lobbyIDText.text = BootstrapManager.CurrentLobbyID.ToString();
+        
+        // Add player when entering lobby
+        if (instance.globalVariables != null)
+        {
+            string playerName = SteamFriends.GetPersonaName();
+            instance.globalVariables.addPlayer(playerName);
+        }
+        
         instance.OpenLobby();
     }
  

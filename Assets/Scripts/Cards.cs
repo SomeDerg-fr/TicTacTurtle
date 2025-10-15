@@ -2,26 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-//using System.Linq.Expressions;
-//using System.Runtime.CompilerServices;
-//using System.Xml;
-//using JetBrains.Annotations;
-//using Unity.VisualScripting;
-//using Unity.VisualScripting.Dependencies.NCalc;
-//using UnityEditor;
 using UnityEngine;
-//using UnityEngine.LowLevelPhysics;
-//using UnityEngine.UIElements;
 using FishNet.Connection;
 using FishNet.Object;
 using FishNet;
-//using FishNet.Example.ColliderRollbacks;
-//using FishNet.Example.Scened;
 using FishNet.Object.Synchronizing;
-using UnityEditor;
-//using FishNet.Object.Synchronizing.Internal;
-//using NUnit.Framework;
-//using FishNet;
+using Steamworks; // Add this line
 
 public class Cards : NetworkBehaviour
 {
@@ -109,7 +95,7 @@ public class Cards : NetworkBehaviour
             //GetComponent<Cards>().enabled = false;
             //yield break;
         //}
-
+        yield return new WaitForSeconds(0.1f);
         // Request player number from server
         RequestPlayerNumber(Owner);
 
@@ -1045,11 +1031,21 @@ public class Cards : NetworkBehaviour
     [ServerRpc]
     private void RequestPlayerNumber(NetworkConnection conn)
     {
-        Debug.Log(conn);
-        Debug.Log(connectedPlayers);
-        if (!connectedPlayers.Contains(conn))
-            connectedPlayers.Add(conn);
-        int assignedPlayerNumber = connectedPlayers.IndexOf(conn) + 1;
+        string playerName = SteamFriends.GetPersonaName();
+    
+        GlobalVariables globals = FindObjectOfType<GlobalVariables>();
+        int assignedPlayerNumber = 1;
+    
+        if (globals != null)
+        {
+            assignedPlayerNumber = globals.getPlayerNo(playerName);
+            if (assignedPlayerNumber == 0)
+            {
+                globals.addPlayer(playerName);
+                assignedPlayerNumber = globals.getPlayerNo(playerName);
+            }
+        }
+        Debug.Log("Player "+assignedPlayerNumber);
         TargetAssignPlayerNumber(conn, assignedPlayerNumber);
     }
 
